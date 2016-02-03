@@ -3,6 +3,7 @@
     width: 100%;
     height: 10vh;
     font-size: 3.8vh;
+    vertical-align: top;
     padding-top: 2vh;
     margin-bottom: 2vh;
     font-family: "Helvetica Neue Light", "Lucida Grande", "Calibri", "Arial", sans-serif;
@@ -33,6 +34,7 @@
     width: 93%;
     height: 8vh;
     font-size: 3.2vh;
+    vertical-align: top;
     padding-top: 2vh;
     font-family: "Helvetica Neue Light", "Lucida Grande", "Calibri", "Arial", sans-serif;
     text-align: left;
