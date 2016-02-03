@@ -16,9 +16,9 @@ module.exports = {
         var fetchFromDB = function() {
             Events.find({
                 $and: [{
-                    startAt: {$not: {$eq: 'Draft'}}
+                    startAt: {$ne: 'Draft'}
                 }, {
-                    startAt: {$not: {$eq: null}}
+                    startAt: {$ne: null}
                 }]
             },
             function(err, events) {
