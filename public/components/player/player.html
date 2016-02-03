@@ -1,0 +1,40 @@
+<div ng-controller="playerCtrl">
+    <audio id="idSelectedAudio" ngf-src="selectedAudio"></audio>
+    <audio id="idSelectedAudioCopy" ngf-src="selectedAudio"></audio>
+    <div class="playerMainBox">
+        <div ng-show="selectedAudio != null">
+            <div class="playerPartControl glyphicon glyphicon-play"
+                 ng-show="!IsPlaying()"
+                 ng-click="Actions.Play()">
+            </div>
+            <div class="playerPartControl glyphicon glyphicon-pause"
+                 ng-show="IsPlaying()"
+                 ng-click="Actions.Stop()">
+            </div>
+        </div>
+        <div ng-class="{
+                            playerPartPreview: true,
+                            playerPartPreviewActive: IsPreviewOn(),
+                            glyphicon: true,
+                            'glyphicon-phone': true
+                        }"
+             ng-click="Actions.PreviewSwitch()">
+        </div>
+        <div class="playerSaveButton glyphicon glyphicon glyphicon-save"
+             ng-click="Actions.SaveData()"
+             ng-class="{
+                            playerSaveButtonDirty: saveBox == 'dirty',
+                            playerSaveButtonWaiting: saveBox == 'waiting',
+                            playerSaveButtonSuccess: saveBox == 'success',
+                            playerSaveButtonFail: saveBox == 'fail'
+                        }">
+
+        </div>
+        <div class="playerPartFromMoment" ng-click="Actions.AddMoment()">
+            +Add Moment
+        </div>
+        <div class="playerPreviewBox" ng-show="IsPreviewOn()">
+            <ng-include src="'/components/previewBox/previewBox.html'"> </ng-include>
+        </div>
+    </div>
+</div>

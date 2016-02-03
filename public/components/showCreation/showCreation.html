@@ -1,0 +1,30 @@
+<div>
+    <div class="footerBox">
+        <ng-include src="'/components/footer/footer.html'"></ng-include>
+    </div>
+    <div ng-show="viewMode == 'momentsCreation'">
+        <ng-include src="'/components/player/player.html'"></ng-include>
+        <div class="showCreationTimeLineIndent" ng-style="{height: (secondsToShow*pixelsPerSec+185)+'px'}"></div>
+        <div class="showCreationTimeLine" ng-style="{height: (secondsToShow*pixelsPerSec)+'px'}">
+            <div data-ng-repeat="momentID in range(0, secondsToShow)"
+                 class="showCreationTimeMoment"
+                 ng-style="{top: (momentID*pixelsPerSec)+'px'}">
+                <div class="showCreationTimeMomentTimeContainer">{{Filters.s_mmss(momentID)}}</div>
+            </div>
+        </div>
+        <ng-include src="'/components/showCreation/momentsCreation/momentsCreation.html'"></ng-include>
+        <div id="idShowCreationProgressLine" class="showCreationProgressLineContainer"
+             ng-style="{height: (secondsToShow*pixelsPerSec)+'px'}"
+             ng-mousedown="Actions.ProgressMouseDown($event)"
+             ng-mouseup="Actions.ProgressMouseUp()">
+            <div class="showCreationProgressLine"></div>
+            <div class="showCreationProgressDoneLine" ng-style="{height: (ProgressInPixels)+'px'}"></div>
+            <div class="showCreationProgressLineTop"></div>
+            <div class="showCreationProgressLineBottom"></div>
+            <div class="showCreationProgressCircle" ng-style="{top: (ProgressInPixels - 3)+'px'}"> </div>
+        </div>
+    </div>
+    <div ng-show="viewMode == 'momentEditor'">
+        <ng-include src="'/components/showCreation/momentsCreation/momentEditor/momentEditor.html'"></ng-include>
+    </div>
+</div>

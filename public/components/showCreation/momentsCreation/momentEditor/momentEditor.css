@@ -1,0 +1,498 @@
+.momentEditorEditBox {
+    position: absolute;
+    top: 100px;
+    width: 600px;
+    left: 50%;
+    margin-left: -300px;
+    height: 500px;
+    border: 1px solid orange;
+    border-radius: 3px;
+    background-color: white;
+}
+
+.momentEditorSaveExit {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    margin-left: -225px;
+    width: 200px;
+}
+
+.momentEditorDiscardExit {
+    position: absolute;
+    bottom: 20px;
+    right: 50%;
+    margin-right: -225px;
+    width: 200px;
+}
+
+.momentEditorStartEditor {
+    position: relative;
+    margin-left: 10px;
+    margin-top: 10px;
+    height: 100px;
+    width: 580px;
+    border-bottom: 1px solid #EEEEEE;
+}
+
+.momentEditorDeleteMoment {
+    position: absolute;
+    top: 25px;
+    right: 0;
+    width: 120px;
+    height: 40px;
+    border: 1px solid #DDDDDD;
+    border-radius: 2px;
+    color: #BBBBBB;
+    padding-top: 8px;
+    text-align: center;
+}
+
+.momentEditorDeleteMoment:hover {
+    cursor: pointer;
+}
+
+.momentEditorDeleteMoment:active {
+    background-color: rgb(251, 251, 251);
+}
+
+.momentEditorAudioControllPosition {
+    position: absolute;
+    top: 25px;
+    left: 10px;
+    width: 40px;
+    height: 40px;
+}
+
+.momentEditorAudioButton {
+    width: 100%;
+    height: 100%;
+    color: #BBBBBB;
+    font-size: 32px;
+    padding-left: 3px;
+    border: 1px solid #DDDDDD;
+    border-radius: 2px;
+}
+
+.momentEditorAudioButton:hover {
+    cursor: pointer;
+}
+
+.momentEditorAudioButton:active {
+    background-color: rgb(251, 251, 251);
+}
+
+.momentEditorAudioRefresh {
+    position: absolute;
+    top: 25px;
+    left: 60px;
+    width: 40px;
+    height: 40px;
+}
+
+.momentEditorAudioRefresh .glyphicon-refresh {
+    padding-top: 2px;
+}
+
+.momentEditorMoveBack {
+    position: absolute;
+    top: 25px;
+    left: 110px;
+    width: 60px;
+    height: 40px;
+    border: 1px solid #DDDDDD;
+    border-radius: 2px;
+    color: #BBBBBB;
+    padding-top: 8px;
+    text-align: center;
+}
+
+.momentEditorMoveBack:hover {
+    cursor: pointer;
+}
+
+.momentEditorMoveBack:active {
+    background-color: rgb(251, 251, 251);
+}
+
+.momentEditorStartTime {
+    position: absolute;
+    top: 25px;
+    left: 180px;
+    width: 80px;
+    height: 40px;
+    border: 1px solid #DDDDDD;
+    border-radius: 2px;
+    color: #AAAAAA;
+    padding-top: 8px;
+    text-align: center;
+}
+
+.momentEditorMoveForward {
+    position: absolute;
+    top: 25px;
+    left: 270px;
+    width: 60px;
+    height: 40px;
+    border: 1px solid #DDDDDD;
+    border-radius: 2px;
+    color: #BBBBBB;
+    padding-top: 8px;
+    text-align: center;
+}
+
+.momentEditorMoveForward:hover {
+    cursor: pointer;
+}
+
+.momentEditorMoveForward:active {
+    background-color: rgb(251, 251, 251);
+}
+
+.momentEditorMoveLocked {
+    background-color: rgb(251, 251, 251);
+}
+
+.momentEditorMoveLocked:hover {
+    cursor: no-drop;
+}
+
+.momentEditorPreview {
+    position: absolute;
+    top: 25px;
+    left: 340px;
+    width: 40px;
+    height: 40px;
+    color: #BBBBBB;
+    font-size: 32px;
+    padding-left: 3px;
+    padding-top: 2px;
+    border: 1px solid #DDDDDD;
+    border-radius: 2px;
+}
+
+.momentEditorPreview:hover {
+    cursor: pointer;
+}
+
+.momentEditorPreview:active {
+    background-color: rgb(251, 251, 251);
+}
+
+.momentEditorPreviewActive {
+    background-color: rgb(251, 251, 251);
+}
+
+.momentEditorPreviewActive:active {
+    background-color: white;
+}
+
+.momentEditorPreviewBox {
+    position: absolute;
+    left: 50%;
+    margin-left: -150px;
+    top: 270px;
+    width: 300px;
+    height: 150px;
+}
+
+.momentEditorChooseTypeBox {
+    margin-top: 10px;
+    margin-left: 10px;
+    height: 400px;
+    width: 580px;
+}
+
+.momentEditorTypesLine {
+    padding-left: 20px;
+}
+
+.momentEditorTypesLineElement {
+    padding-left: 10px;
+    padding-right: 10px;
+    border-left: 1px solid #EEEEEE;
+    display: inline-block;
+    border-bottom: 1px solid #EEEEEE;
+}
+
+.momentEditorTypesLineElement:hover {
+    cursor: pointer;
+}
+
+.momentEditorTypesLineElement:active {
+    color: #BBBBBB;
+}
+
+.momentEditorTypesLineElement:first-child {
+    border-left: none;
+}
+
+.momentEditorTypesLineElementActive {
+    border-bottom: none;
+    color: orange;
+}
+
+.momentEditorType_singleColor {
+    position: relative;
+    margin-left: 40px;
+    margin-top: 40px;
+    width: 500px;
+    height: 200px;
+    font-size: 16px;
+    color: #BBBBBB;
+}
+
+.momentEditorType_singleColorPropertyName {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 100px;
+    height: 25px;
+    text-align: center;
+}
+
+.momentEditorType_singleColorInputColor {
+    position: absolute;
+    left: 120px;
+    top: 10px;
+    width: 50px;
+    height: 25px;
+    text-align: center;
+}
+
+.momentEditorType_colorToColor {
+    position: relative;
+    margin-left: 40px;
+    margin-top: 25px;
+    width: 500px;
+    height: 200px;
+    font-size: 16px;
+    color: #BBBBBB;
+}
+
+.momentEditorType_colorToColorProperty1Name {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 160px;
+    height: 25px;
+    text-align: center;
+}
+
+.momentEditorType_colorToColorInput1Color {
+    position: absolute;
+    left: 180px;
+    top: 10px;
+    width: 50px;
+    height: 25px;
+    text-align: center;
+}
+
+.momentEditorType_colorToColorProperty2Name {
+    position: absolute;
+    left: 10px;
+    top: 40px;
+    width: 160px;
+    height: 25px;
+    text-align: center;
+}
+
+.momentEditorType_colorToColorInput2Color {
+    position: absolute;
+    left: 180px;
+    top: 40px;
+    width: 50px;
+    height: 25px;
+    text-align: center;
+}
+
+.momentEditorType_cycle {
+    position: relative;
+    margin-left: 40px;
+    margin-top: 25px;
+    width: 500px;
+    height: 300px;
+    font-size: 16px;
+    color: #BBBBBB;
+}
+
+.momentEditorType_cycleSingleColor {
+    margin-left: 2px;
+    height: 25px;
+    width: 50px;
+    display: inline-block;
+}
+
+.momentEditorType_cycleDeleteColor {
+    margin-top: 4px;
+    height: 12px;
+    width: 12px;
+    font-size: 12px;
+    display: inline-block;
+}
+
+.momentEditorType_changeDuration {
+    position: absolute;
+    top: 40px;
+    left: 10px;
+    width: 130px;
+    height: 25px;
+}
+
+.momentEditorType_changeDurationInput {
+    height: 25px;
+    width: 60px;
+}
+
+.momentEditorType_changeSmoothness {
+    position: absolute;
+    top: 40px;
+    left: 140px;
+    width: 160px;
+    height: 25px;
+}
+
+.momentEditorType_cycleAddColor {
+    position: absolute;
+    top: 40px;
+    left: 300px;
+    width: 80px;
+    height: 25px;
+    font-size: 13px;
+    padding-top: 2px;
+    text-align: center;
+    border: 1px solid #EEEEEE;
+    color: orange;
+    border-radius: 2px;
+}
+
+.momentEditorType_cycleAddColor:hover {
+    cursor: pointer;
+}
+
+.momentEditorType_cycleAddColor:active {
+    background-color: rgb(251, 251, 251);
+}
+
+.momentEditorType_colorPlusBlink {
+    position: relative;
+    margin-top: 25px;
+    width: 500px;
+    height: 200px;
+    font-size: 16px;
+    color: #BBBBBB;
+}
+
+.momentEditorType_colorPlusBlinkProperty1Name {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 160px;
+    height: 25px;
+    text-align: center;
+}
+
+.momentEditorType_colorPlusBlinkInput1Color {
+    position: absolute;
+    left: 180px;
+    top: 10px;
+    width: 50px;
+    height: 25px;
+    text-align: center;
+}
+
+.momentEditorType_colorPlusBlinkProperty2Name {
+    position: absolute;
+    left: 10px;
+    top: 40px;
+    width: 160px;
+    height: 25px;
+    text-align: center;
+}
+
+.momentEditorType_colorPlusBlinkInput2Color {
+    position: absolute;
+    left: 180px;
+    top: 40px;
+    width: 50px;
+    height: 25px;
+    text-align: center;
+}
+
+.momentEditorType_colorPlusBlinkProbability {
+    position: absolute;
+    top: 25px;
+    left: 250px;
+    width: 260px;
+    height: 25px;
+}
+
+.momentEditorType_colorPlusBlinkProperty3Name {
+    width: 140px;
+    height: 25px;
+    text-align: center;
+    display: inline-block;
+}
+
+.momentEditorType_wave {
+    position: relative;
+    margin-top: 25px;
+    margin-left: 20px;
+    width: 500px;
+    height: 200px;
+    font-size: 16px;
+    color: #BBBBBB;
+}
+
+
+.momentEditorType_waveProperty1Name {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 170px;
+    height: 25px;
+    text-align: center;
+}
+
+.momentEditorType_waveInput1Color {
+    position: absolute;
+    left: 190px;
+    top: 10px;
+    width: 50px;
+    height: 25px;
+    text-align: center;
+}
+
+.momentEditorType_waveProperty2Name {
+    position: absolute;
+    left: 10px;
+    top: 40px;
+    width: 170px;
+    height: 25px;
+    text-align: center;
+}
+
+.momentEditorType_waveInput2Color {
+    position: absolute;
+    left: 190px;
+    top: 40px;
+    width: 50px;
+    height: 25px;
+    text-align: center;
+}
+
+.momentEditorType_waveTypeInput1 {
+    position: absolute;
+    left: 400px;
+    top: 10px;
+    width: 70px;
+    height: 25px;
+}
+
+.momentEditorType_waveTypeInput2 {
+    position: absolute;
+    left: 400px;
+    top: 40px;
+    width: 70px;
+    height: 25px;
+}

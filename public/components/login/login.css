@@ -1,0 +1,150 @@
+.loginMainBox {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    width: 600px;
+    height: 475px;
+    border: 1px solid #EEEEEE;
+    border-radius: 4px;
+}
+.loginBlockedLoading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(220, 220, 220, 0.2);
+}
+
+.loginFormInput {
+    border: none;
+    width: auto;
+    min-width: 0px;
+}
+
+.loginMainForm {
+    position: absolute;
+    width: 300px;
+    left: 150px;
+    top: 100px;
+    height: 150px;
+
+    border: 1px solid #EEEEEE;
+    border-radius: 10px;
+}
+
+.loginUserLogin {
+    position: absolute;
+    width: 290px;
+    left: 5px;
+    top: 5px;
+    height: 70px;
+    border-bottom: 1px solid #EEEEEE;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-left: 15px;
+}
+
+.loginUserPassword {
+    position: absolute;
+    width: 290px;
+    left: 5px;
+    top: 75px;
+    height: 70px;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-left: 15px;
+}
+
+.loginMainForm .glyphicon {
+    color: orange;
+    margin-right: 5px;
+}
+
+.loginEnterButton {
+    position: absolute;
+    width: 150px;
+    left: 140px;
+    top: 345px;
+}
+
+.loginShowSignInFormButton {
+    position: absolute;
+    width: 150px;
+    left: 310px;
+    top: 345px;
+}
+
+.loginFlareTitle {
+    position: absolute;
+    left: 250px;
+    width: 100px;
+    height: 50px;
+    top: 20px;
+    font-size: 32px;
+}
+
+.loginSignInMainForm {
+    position: absolute;
+    width: 300px;
+    left: 150px;
+    top: 100px;
+    height: 225px;
+
+    border: 1px solid #EEEEEE;
+    border-radius: 10px;
+}
+
+.loginSignInUserLogin {
+    position: absolute;
+    width: 290px;
+    left: 5px;
+    top: 5px;
+    height: 70px;
+    border-bottom: 1px solid #EEEEEE;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-left: 15px;
+}
+
+.loginSignInUserPassword {
+    position: absolute;
+    width: 290px;
+    left: 5px;
+    top: 75px;
+    height: 70px;
+    border-bottom: 1px solid #EEEEEE;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-left: 15px;
+}
+
+.loginSignInUserPasswordCopy {
+    position: absolute;
+    width: 290px;
+    left: 5px;
+    top: 150px;
+    height: 70px;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-left: 15px;
+}
+
+.loginSignInMainForm .glyphicon {
+    color: orange;
+    margin-right: 5px;
+}
+
+.loginSignInButton {
+    position: absolute;
+    width: 150px;
+    left: 140px;
+    top: 345px;
+}
+
+.loginShowLoginFormButton {
+    position: absolute;
+    width: 150px;
+    left: 310px;
+    top: 345px;
+}

@@ -1,0 +1,28 @@
+<div>
+    <div class="footerBox">
+        <ng-include src="'/components/footer/footer.html'"></ng-include>
+    </div>
+    <div class="songChooserMainBox">
+        <div class="songChooserUploadingArea"
+             ngf-drop ngf-select
+             ng-model="selectedAudio"
+             accept="audio/*"
+             ngf-pattern="'audio/*'">
+            <div ng-show="selectedAudio == null" class="songChooserSongNotUploaded">
+                Drag & Drop file here or click to select.
+            </div>
+            <div ng-hide="selectedAudio == null" class="songChooserSongUploaded">
+                Song selected, click to select other.
+                <div class="songChooserSelectedSong">
+                    {{selectedAudioName}}
+                </div>
+            </div>
+        </div>
+        <div class="songChooserNavigationBox">
+            <button class="songChooserNavigationNext btn btn-warning" ng-click="Actions.NavigateNext()">
+                <div ng-show="selectedAudio == null">Continue without audio</div>
+                <div ng-show="selectedAudio != null">Next</div>
+            </button>
+        </div>
+    </div>
+</div>

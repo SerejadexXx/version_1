@@ -1,0 +1,29 @@
+<div ng-controller="clientShowCtrl"
+     class="clientShowFullScreen">
+    <div class="clientShowCloseButtonContainer" ng-show="showData" ng-click="Actions.Close()">
+        <div class="clientShowCloseButtonChevron">
+            <div class="clientShowCloseButtonChevronInner"></div>
+        </div>
+        <div class="clientShowCloseButton">
+            {{name}}
+        </div>
+    </div>
+    <div class="clientShowMainContainer"
+         ng-click="Actions.SwapContent()"
+         ng-style="{'background-color': currentColor}">
+        <div class="clientShowCountdownDays" ng-show="(countdownDays && showData)">
+            Starts in {{countdownDays}} days.
+        </div>
+        <div class="clientShowCountdownSeconds" ng-show="(countdownSeconds && showData)">
+            {{Filters.ms_HHmmss(countdownSeconds)}}
+        </div>
+        <div class="clientShowGreetings" ng-show="showData">
+            <div class="clientShowGreetingsThanks">
+                Thanks for join our event.
+            </div>
+            <div class="clientShowGreetingsTouch">
+                Touch to hide
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,60 @@
+<div>
+    <div class="indexHeader">
+        <div class="indexHeaderGreetings">
+            Hello, {{username}}
+        </div>
+        <div class="indexLogOutButton" ng-click="Actions.LogOut()">
+            Logout
+        </div>
+    </div>
+    <table class="indexEventsContainer table table-bordered">
+        <tr class="row">
+            <th class="col-md-1">
+                #
+            </th>
+            <th class="col-md-2">
+                Name
+            </th>
+            <th class="col-md-1">
+                Duration
+            </th>
+            <th class="col-md-3">
+                Start Date
+            </th>
+            <th class="col-md-3">
+                Creation Date
+            </th>
+            <th class="col-md-2">
+
+            </th>
+        </tr>
+        <tr ng-repeat="event in displayEventList" class="row">
+            <td>
+                {{$index + 1}}
+            </td>
+            <td>
+                {{Event(event).GetName()}}
+            </td>
+            <td>
+                {{Event(event).GetDuration()}}
+            </td>
+            <td>
+                {{Event(event).GetStartDate() | date:'yyyy-MM-dd HH:mm:ss'}}
+            </td>
+            <td>
+                {{Event(event).GetCreationDate() | date:'yyyy-MM-dd HH:mm:ss'}}
+            </td>
+            <td>
+                <div class="indexEditEventButton" ng-click="Actions.EditEvent(event.id, event.startAt)">
+                    Edit
+                </div>
+                <div class="indexDeleteEventButton" ng-click="Actions.DeleteEvent(event.id)">
+                    Delete
+                </div>
+            </td>
+        </tr>
+    </table>
+    <button class="indexAddEventButton btn btn-warning" ng-click="Actions.AddEvent()">
+        Add Event
+    </button>
+</div>

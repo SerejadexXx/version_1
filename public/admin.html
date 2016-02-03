@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html ng-app="adminApp">
+<head>
+    <title>Flare</title>
+    <meta charset="utf-8">
+    <base href="/">
+    <script src="bower/angular/angular.min.js"></script>
+    <script src="bower/angular-ui-router/release/angular-ui-router.min.js"></script>
+
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-aria.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-messages.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.js"></script>
+
+    <script src="bower/angular-cookies/angular-cookies.js"></script>
+    <script src="bower/ng-file-upload-shim/ng-file-upload-shim.min.js"></script>
+    <script src="bower/ng-file-upload/ng-file-upload.min.js"></script>
+    <script src="bower/tinycolor/dist/tinycolor-min.js"></script>
+    <script src="bower/md-color-picker/dist/mdColorPicker.min.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+          integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css"
+          integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+    <link href="bower/md-color-picker/dist/mdColorPicker.min.css" rel="stylesheet" />
+
+    <script src="apps/adminApp.js"></script>
+
+    <script src="components/admin/adminCtrl.js"></script>
+    <link rel="stylesheet" href="components/admin/admin.css">
+
+    <script src="components/index/indexCtrl.js"></script>
+    <link rel="stylesheet" href="components/index/index.css">
+    <script src="components/login/loginCtrl.js"></script>
+    <link rel="stylesheet" href="components/login/login.css">
+    <script src="components/footer/footerCtrl.js"></script>
+    <link rel="stylesheet" href="components/footer/footer.css">
+    <script src="components/previewBox/previewBoxCtrl.js"></script>
+    <link rel="stylesheet" href="components/previewBox/previewBox.css">
+    <script src="components/player/playerCtrl.js"></script>
+    <link rel="stylesheet" href="components/player/player.css">
+    <script src="components/songChooser/songChooserCtrl.js"></script>
+    <link rel="stylesheet" href="components/songChooser/songChooser.css">
+    <script src="components/showCreation/showCreationCtrl.js"></script>
+    <link rel="stylesheet" href="components/showCreation/showCreation.css">
+    <script src="components/showCreation/momentsCreation/momentsCreationCtrl.js"></script>
+    <link rel="stylesheet" href="components/showCreation/momentsCreation/momentsCreation.css">
+    <script src="components/showCreation/momentsCreation/momentEditor/momentEditorCtrl.js"></script>
+    <link rel="stylesheet" href="components/showCreation/momentsCreation/momentEditor/momentEditor.css">
+    <script src="components/showPlanning/showPlanningCtrl.js"></script>
+    <link rel="stylesheet" href="components/showPlanning/showPlanning.css">
+    <script src="components/countdown/countdownCtrl.js"></script>
+    <link rel="stylesheet" href="components/countdown/countdown.css">
+
+    <script src="services/AuthorizationService.js"></script>
+    <script src="services/MomentsParserService.js"></script>
+    <script src="services/NavigationService.js"></script>
+    <script src="services/TemporaryStorageService.js"></script>
+    <script src="services/TimeSyncService.js"></script>
+</head>
+<body ng-controller="adminCtrl">
+<div class="mainBox">
+    <div ui-view></div>
+</div>
+<div class="bottomBox">
+    <div class="bottomBoxInner">
+        Flare 2015-2016 (c). Kyiv, Ukraine.
+    </div>
+</div>
+</body>
+</html>

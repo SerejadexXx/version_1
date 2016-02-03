@@ -1,0 +1,31 @@
+<div ng-controller="momentsCreationCtrl" class="momentsCreationMainBox">
+    <div ng-repeat="moment in moments track by $index">
+        <div ng-class="{momentsCreationPointer: true, momentsCreationPointerActive: moment.id == activeId}"
+             ng-style="{
+                        top: (ProgressToTopPosition(moment.startAt))+'px',
+                        width: (ProgressToLeftPosition(moment.startAt) + 25)+'px'
+                     }">
+        </div>
+    </div>
+    <div ng-repeat="moment in moments track by $index">
+        <div ng-class="{momentsCreationMomentBox: true, momentsCreationMomentBoxActive: moment.id == activeId}"
+             ng-style="{
+                top: (ProgressToTopPosition(moment.startAt)-1)+'px',
+                left: ProgressToLeftPosition(moment.startAt)+'px'
+                }">
+            <div class="momentCreationBoxInner">
+                <div class="momentsCreationMomentBoxEdit"
+                     ng-click="Actions.EditMoment(moment)">
+                    Edit
+                </div>
+                <div class="momentsCreationMomentBoxMoveToMoment glyphicon glyphicon-share-alt"
+                     ng-click="Actions.MoveToMoment(moment)">
+                </div>
+                <div class="momentsCreationMomentBoxDelete glyphicon glyphicon-remove"
+                     ng-click="Actions.DeleteMoment(moment)"
+                     ng-show="$index != 0">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

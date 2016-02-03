@@ -1,0 +1,18 @@
+<div ng-controller="previewBoxCtrl" class="previewBoxMainBox">
+    <div ng-show="info.orientation == 'vertical'">
+        <div class="previewBoxMainBoxInnerV">
+            <div class="previewBoxUserScreen" ng-style="{'background-color': userColor}">
+            </div>
+        </div>
+        <div class="previewBoxMainBoxButtonV">
+        </div>
+    </div>
+    <div ng-show="info.orientation == 'horizontal'">
+        <div class="previewBoxMainBoxInnerH">
+            <div class="previewBoxUserScreen" ng-style="{'background-color': userColor}">
+            </div>
+        </div>
+        <div class="previewBoxMainBoxButtonH">
+        </div>
+    </div>
+</div>

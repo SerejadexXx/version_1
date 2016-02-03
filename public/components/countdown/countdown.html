@@ -1,0 +1,31 @@
+<div>
+    <div class="footerBox">
+        <ng-include src="'/components/footer/footer.html'"></ng-include>
+    </div>
+    <div class="countdownMainBox" ng-show="info != null">
+        <div class="countdownCurrentTime">
+            Now
+            <div class="countdownTimeInner">
+                {{currentTime | date:'yyyy-MM-dd HH:mm:ss'}}
+            </div>
+        </div>
+        <div class="countdownPlannedStart">
+            Starts at
+            <div class="countdownTimeInner">
+                {{GetStart() | date:'yyyy-MM-dd HH:mm:ss'}}
+            </div>
+        </div>
+        <div class="countdownTimeSelector" ng-show="changingStart == 1">
+            <input type="date" ng-model="dateToSelect">
+            <input type="time" ng-model="timeToSelect">
+            <div class="countdownTimeSelectorUse glyphicon glyphicon-ok"
+                 ng-click="Actions.ChangeStart()" ng-show="(dateToSelect && timeToSelect)"></div>
+        </div>
+        <button class="countdownChangeStartButton btn btn-warning"
+                ng-click="Actions.ChangingStart()">
+            {{changingStart == 1 ? 'Close' : 'Change'}}
+        </button>
+        <button class="countdownSaveDraftButton btn btn-danger"
+                ng-click="Actions.SaveDraft()">Cancel and Draft</button>
+    </div>
+</div>

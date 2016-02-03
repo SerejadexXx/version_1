@@ -1,0 +1,53 @@
+.previewBoxMainBox {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #EEEEEE;
+    border-radius: 20px;
+}
+
+.previewBoxMainBoxInnerV {
+    position: absolute;
+    left: 3px;
+    right: 3px;
+    top: 20px;
+    bottom: 24px;
+    border: 1px solid #EEEEEE;
+    border-radius: 2px;
+}
+
+.previewBoxMainBoxButtonV {
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    margin-left: -8px;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #EEEEEE;
+    border-radius: 8px;
+}
+
+.previewBoxMainBoxInnerH {
+    position: absolute;
+    top: 3px;
+    bottom: 3px;
+    left: 20px;
+    right: 24px;
+    border: 1px solid #EEEEEE;
+    border-radius: 2px;
+}
+
+.previewBoxMainBoxButtonH {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    margin-top: -8px;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #EEEEEE;
+    border-radius: 8px;
+}
+
+.previewBoxUserScreen {
+    width: 100%;
+    height: 100%;
+}

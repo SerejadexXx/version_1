@@ -1,0 +1,188 @@
+<div ng-controller="momentEditorCtrl" ng-show="momentToEdit != null">
+    <div class="momentEditorEditBox">
+        <div class="momentEditorStartEditor">
+            <div class="momentEditorDeleteMoment"
+                 ng-show="momentToEdit.startAt != 0"
+                 ng-click="Actions.Delete()">
+                Delete Moment
+            </div>
+
+            <div class="momentEditorAudioControllPosition">
+                <div class="momentEditorAudioButton glyphicon glyphicon-play"
+                     ng-click="Actions.Play()"
+                     ng-show="!IsPlaying()">
+                </div>
+                <div class="momentEditorAudioButton glyphicon glyphicon-stop"
+                     ng-click="Actions.Stop()"
+                     ng-show="IsPlaying()">
+                </div>
+            </div>
+            <div class="momentEditorAudioRefresh">
+                <div class="momentEditorAudioButton glyphicon glyphicon-refresh"
+                     ng-click="Actions.Refresh()">
+                </div>
+            </div>
+            <div ng-class="{momentEditorMoveBack: true, momentEditorMoveLocked: !canMoveBack()}"
+                 ng-click="Actions.MoveBack()">
+                <div class="glyphicon glyphicon-chevron-left">
+                </div>
+                50ms
+            </div>
+            <div class="momentEditorStartTime">
+                {{Filters.mm_ss_ms(momentToEdit.startAt)}}
+            </div>
+            <div ng-class="{momentEditorMoveForward: true, momentEditorMoveLocked: !canMoveForward()}"
+                 ng-click="Actions.MoveForward()">
+                50ms
+                <div class="glyphicon glyphicon-chevron-right">
+                </div>
+            </div>
+            <div ng-class="{
+                                momentEditorPreview: true,
+                                momentEditorPreviewActive: DisplayPreview(),
+                                glyphicon: true,
+                                'glyphicon-phone': true
+                            }"
+                 ng-click="Actions.PreviewSwitch()">
+            </div>
+        </div>
+
+        <div class="momentEditorChooseTypeBox">
+            <div class="momentEditorTypesLine">
+                <div ng-repeat="type in MomentTypes track by $index"
+                     ng-class="{
+                        momentEditorTypesLineElement: true,
+                        momentEditorTypesLineElementActive: momentToEdit.type == type.type
+                       }"
+                     ng-click="Actions.SetTypeTo(type.type)">
+                    {{type.name}}
+                </div>
+                <div ng-show="momentToEdit.type == 'singleColor'"
+                     class="momentEditorType_singleColor">
+                    <div class="momentEditorType_singleColorPropertyName">
+                        Select Color
+                    </div>
+                    <form novalidate class="momentEditorType_singleColorInputColor">
+                        <input type="color" ng-model="selectedColor" ng-change="ChangedColor()">
+                    </form>
+                </div>
+                <div ng-show="momentToEdit.type == 'colorToColor'"
+                     class="momentEditorType_colorToColor">
+                    <div class="momentEditorType_colorToColorProperty1Name">
+                        Select First Color
+                    </div>
+                    <form novalidate class="momentEditorType_colorToColorInput1Color">
+                        <input type="color" ng-model="selectedColor1" ng-change="ChangedColor1()">
+                    </form>
+                    <div class="momentEditorType_colorToColorProperty2Name">
+                        Select Second Color
+                    </div>
+                    <form novalidate class="momentEditorType_colorToColorInput2Color">
+                        <input type="color" ng-model="selectedColor2" ng-change="ChangedColor2()">
+                    </form>
+                </div>
+                <div ng-show="momentToEdit.type == 'cycle' || momentToEdit.type == 'random'"
+                     class="momentEditorType_cycle">
+                    <form novalidate>
+                        <div ng-repeat="selectedColor in selectedColors"
+                             class="momentEditorType_cycleSingleColor">
+                            <input ng-model="selectedColor.color"
+                                   type="color"
+                                   ng-style="{width: '25px'}"
+                                   ng-change="ChangedColor()">
+                            <div class="momentEditorType_cycleDeleteColor"
+                                 ng-click="DeleteColor($index)"
+                                 ng-show="selectedColors.length > 1">
+                                <div class="glyphicon glyphicon-remove"> </div>
+                            </div>
+                        </div>
+                        <div class="momentEditorType_changeDuration">
+                            Duration
+                            <input type="number"
+                                   ng-model="momentToEdit.data.duration"
+                                   class="momentEditorType_changeDurationInput"
+                                   ng-blur="ChangedDuration()">
+                        </div>
+                        <div class="momentEditorType_changeSmoothness">
+                            Smoothness
+                            <input type="range"
+                                   ng-model="momentToEdit.data.smoothness"
+                                   ng-style="{width: '60px', display: 'inline-block'}"
+                                   min="0"
+                                   max="100">
+                        </div>
+                    </form>
+                    <div class="momentEditorType_cycleAddColor"
+                         ng-show="selectedColors.length < 9"
+                         ng-click="AddColor()">
+                        +Add Color
+                    </div>
+                </div>
+
+
+                <div ng-show="momentToEdit.type == 'colorPlusBlink'"
+                     class="momentEditorType_colorPlusBlink">
+                    <div class="momentEditorType_colorPlusBlinkProperty1Name">
+                        Select Main Color
+                    </div>
+                    <form novalidate class="momentEditorType_colorPlusBlinkInput1Color">
+                        <input type="color" ng-model="selectedColor1" ng-change="ChangedColor1()">
+                    </form>
+                    <div class="momentEditorType_colorPlusBlinkProperty2Name">
+                        Select Blink Color
+                    </div>
+                    <form novalidate class="momentEditorType_colorPlusBlinkInput2Color">
+                        <input type="color" ng-model="selectedColor2" ng-change="ChangedColor2()">
+                    </form>
+                    <div class="momentEditorType_colorPlusBlinkProbability">
+                        <div class="momentEditorType_colorPlusBlinkProperty3Name">Blink probability</div>
+                        <input type="range"
+                               ng-model="momentToEdit.data.blinkProbability"
+                               ng-style="{width: '100px', display: 'inline-block'}"
+                               min="0"
+                               max="100">
+                    </div>
+                </div>
+                <div ng-show="momentToEdit.type == 'wave'"
+                     class="momentEditorType_wave">
+                    <div class="momentEditorType_waveProperty1Name">
+                        Select Main Color
+                    </div>
+                    <form novalidate class="momentEditorType_waveInput1Color">
+                        <input type="color" ng-model="selectedColor1" ng-change="ChangedColor1()">
+                    </form>
+                    <div class="momentEditorType_waveProperty2Name">
+                        Select Illustration Color
+                    </div>
+                    <form novalidate class="momentEditorType_waveInput2Color">
+                        <input type="color" ng-model="selectedColor2" ng-change="ChangedColor2()">
+                    </form>
+
+                    <div class="momentEditorType_waveTypeInput1">
+                        <input type="radio"
+                               ng-model="momentToEdit.data.type"
+                               value="xRay"> xRay
+                    </div>
+                    <div class="momentEditorType_waveTypeInput2">
+                        <input type="radio"
+                               ng-model="momentToEdit.data.type"
+                               value="lines"> lines
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="momentEditorPreviewBox" ng-show="DisplayPreview()">
+            <ng-include src="'/components/previewBox/previewBox.html'"> </ng-include>
+        </div>
+
+        <button class="momentEditorSaveExit btn btn-warning"
+                ng-click="Actions.SaveExit()">
+            Save & Exit
+        </button>
+        <button class="momentEditorDiscardExit btn btn-warning"
+                ng-click="Actions.DiscardExit()">
+            Discard & Exit
+        </button>
+    </div>
+</div>

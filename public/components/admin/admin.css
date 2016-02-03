@@ -1,0 +1,19 @@
+:focus {
+    outline: 0;
+}
+
+.mainBox {
+    position: relative;
+    width: 800px;
+    min-height: 90vh;
+    margin:0 auto;
+}
+.bottomBox {
+    margin:0 auto;
+    width: 800px;
+    padding-top: 15px;
+    text-align: center;
+    height: 50px;
+    border-top: 1px solid #EEE;
+    background-color: white;
+}

@@ -1,0 +1,80 @@
+<div class="loginMainBox">
+    <div ng-show="state==States.loginForm">
+        <div class="loginFlareTitle">
+            Flare
+        </div>
+        <form novalidate class="loginMainForm">
+            <div class="loginUserLogin">
+                <div class="glyphicon glyphicon-envelope"></div>
+                <input
+                        ng-model="UserData.login"
+                        placeholder="your login"
+                        class="loginFormInput"
+                        ng-style="UserData.login.length > 0 && UserData.IncorrectLogin() ? {background: '#ffcccc'} : {}">
+            </div>
+            <div class="loginUserPassword">
+                <div class="glyphicon glyphicon-lock"></div>
+                <input
+                        type="password"
+                        ng-model="UserData.password"
+                        placeholder="your password"
+                        class="loginFormInput"
+                        ng-style="UserData.password.length > 0 && UserData.IncorrectPassword() ? {background: '#ffcccc'} : {}">
+            </div>
+        </form>
+        <button class="loginEnterButton btn btn-warning"
+                ng-disabled="!Validators.FormCorrect()"
+                ng-click="Actions.Enter()">
+            Enter
+        </button>
+        <button
+                class="loginShowSignInFormButton btn btn-warning"
+                ng-click="Actions.ShowSignInForm()">
+            Sign In
+        </button>
+    </div>
+    <div ng-show="state==States.signInForm">
+        <div class="loginFlareTitle">
+            Flare
+        </div>
+        <form novalidate class="loginSignInMainForm">
+            <div class="loginSignInUserLogin">
+                <div class="glyphicon glyphicon-envelope"></div>
+                <input
+                        ng-model="UserData.login"
+                        placeholder="your login"
+                        class="loginFormInput"
+                        ng-style="UserData.login.length > 0 && UserData.IncorrectLogin() ? {background: '#ffcccc'} : {}">
+            </div>
+            <div class="loginSignInUserPassword">
+                <div class="glyphicon glyphicon-lock"></div>
+                <input
+                        type="password"
+                        ng-model="UserData.password"
+                        placeholder="your password"
+                        class="loginFormInput"
+                        ng-style="UserData.password.length > 0 && UserData.IncorrectPassword() ? {background: '#ffcccc'} : {}">
+            </div>
+            <div class="loginSignInUserPasswordCopy">
+                <div class="glyphicon glyphicon-repeat"></div>
+                <input
+                        type="password"
+                        ng-model="UserData.passwordCopy"
+                        placeholder="repeat password"
+                        class="loginFormInput"
+                        ng-style="UserData.passwordCopy.length > 0 && UserData.IncorrectPasswordCopy() ? {background: '#ffcccc'} : {}">
+            </div>
+        </form>
+        <button class="loginSignInButton btn btn-warning"
+                ng-disabled="!Validators.FormCorrect()"
+                ng-click="Actions.SignIn()">
+            Sign In
+        </button>
+        <button
+                class="loginShowLoginFormButton btn btn-warning"
+                ng-click="Actions.ShowLoginForm()">
+            Back
+        </button>
+    </div>
+    <div class="loginBlockedLoading" ng-show="blockedLoading"></div>
+</div>

@@ -1,0 +1,18 @@
+<div ng-controller="footerCtrl" class="footerMainBox">
+    <div class="footerMainLine">
+        <div ng-repeat="(stateName, state) in States" ng-attr-id="{{'footerBox' + ($index + 1)}}">
+            <div ng-show="(!isLocked && (!lockCreation || $index == 0))">
+                <div class="footerBoxWrapper footerBoxClickable" ng-click="Actions.NavigateTo(stateName)">
+                    <div class="footerActiveBox" ng-show="stateName == currentState"></div>
+                    <div class="footerBoxContainer">{{state.displayName}}</div>
+                </div>
+            </div>
+            <div ng-show="(isLocked || (lockCreation && $index > 0))">
+                <div class="footerBoxWrapper">
+                    <div class="footerActiveBox" ng-show="stateName == currentState"></div>
+                    <div class="footerBoxContainer">{{state.displayName}}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

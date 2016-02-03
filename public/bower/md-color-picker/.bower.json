@@ -1,0 +1,40 @@
+{
+  "name": "md-color-picker",
+  "authors": [
+    "Brian Kelley <kelley.brianp@gmail.com>"
+  ],
+  "description": "Angular-Material inspired color picker.",
+  "main": [
+    "dist/mdColorPicker.min.js",
+    "dist/mdColorPicker.min.css"
+  ],
+  "dependencies": {
+    "tinycolor": ">=1.2.1"
+  },
+  "keywords": [
+    "color-picker",
+    "angular",
+    "angular-material",
+    "color-chooser",
+    "color-dialog"
+  ],
+  "license": "GPLv2",
+  "homepage": "https://github.com/brianpkelley/md-color-picker",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "_release": "16cc56e4a0",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "16cc56e4a014a1ae65f47d6d6af6ecb4917bd682"
+  },
+  "_source": "git://github.com/brianpkelley/md-color-picker.git",
+  "_target": "*",
+  "_originalSource": "md-color-picker",
+  "_direct": true
+}

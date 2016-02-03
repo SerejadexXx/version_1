@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html ng-app="clientApp" class="clientBackground">
+<head>
+    <title>Flare</title>
+    <meta charset="utf-8">
+    <base href="/">
+    <script src="bower/angular/angular.min.js"></script>
+    <script src="bower/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-aria.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-messages.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.js"></script>
+
+    <script src="bower/angular-cookies/angular-cookies.js"></script>
+    <script src="bower/tinycolor/dist/tinycolor-min.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+          integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css"
+          integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+    <link href="bower/md-color-picker/dist/mdColorPicker.min.css" rel="stylesheet" />
+
+    <script src="apps/clientApp.js"></script>
+
+    <script src="components/client/clientCtrl.js"></script>
+    <link rel="stylesheet" href="components/client/client.css">
+    <script src="components/client/clientEventList/clientEventListCtrl.js"></script>
+    <link rel="stylesheet" href="components/client/clientEventList/clientEventList.css">
+    <script src="components/client/clientShow/clientShowCtrl.js"></script>
+    <link rel="stylesheet" href="components/client/clientShow/clientShow.css">
+
+
+    <script src="services/MomentsParserService.js"></script>
+    <script src="services/TimeSyncService.js"></script>
+</head>
+<body ng-controller="clientCtrl" class="clientBackground">
+    <ng-include src="'components/client/clientEventList/clientEventList.html'" ng-show="state=='eventListState'"></ng-include>
+    <ng-include src="'components/client/clientShow/clientShow.html'" ng-show="state=='showState'"></ng-include>
+</body>
+</html>

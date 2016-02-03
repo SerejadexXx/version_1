@@ -1,0 +1,92 @@
+.countdownMainBox {
+    position: absolute;
+    width: 600px;
+    left: 100px;
+    top: 100px;
+    height: 500px;
+    border: 1px solid orange;
+    border-radius: 4px;
+}
+
+.countdownCurrentTime {
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    width: 400px;
+    height: 50px;
+    border: 1px solid orange;
+    border-radius: 4px;
+    padding-top: 5px;
+    padding-left: 30px;
+    font-size: 24px;
+    color: #BBBBBB;
+}
+
+.countdownTimeInner {
+    position: absolute;
+    width: 230px;
+    height: 40px;
+    right: 20px;
+    top: 5px;
+}
+
+.countdownPlannedStart {
+    position: absolute;
+    top: 170px;
+    left: 50px;
+    width: 400px;
+    height: 50px;
+    border: 1px solid orange;
+    border-radius: 4px;
+    padding-top: 5px;
+    padding-left: 30px;
+    font-size: 24px;
+    color: #BBBBBB;
+}
+
+.countdownChangeStartButton {
+    position: absolute;
+    top: 180px;
+    left: 470px;
+    width: 100px;
+}
+
+.countdownSaveDraftButton {
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    margin-left: -90px;
+    width: 180px;
+}
+
+.countdownTimeSelector {
+    position: absolute;
+    top: 250px;
+    left: 75px;
+    width: 450px;
+    height: 50px;
+    border: 1px solid orange;
+    border-radius: 4px;
+    color: #BBBBBB;
+    padding-top: 10px;
+    padding-left: 20px;
+    font-size: 18px;
+}
+
+.countdownTimeSelectorUse {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    width: 15px;
+    height: 15px;
+    font-size: 15px;
+    color: #BBBBBB;
+}
+
+.countdownTimeSelectorUse:hover {
+    cursor: pointer;
+}
+
+.countdownTimeSelectorUse:active {
+    color: #EEEEEE;
+}

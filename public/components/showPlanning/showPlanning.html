@@ -1,0 +1,59 @@
+<div>
+    <div class="footerBox">
+        <ng-include src="'/components/footer/footer.html'"></ng-include>
+    </div>
+    <div class="showPlanningForm" ng-show="info != null">
+        <div class="showPlanningNameInput">
+            Name
+            <input class="showPlanningNameContainer" ng-model="info.name" placeholder="Enter name">
+        </div>
+        <div class="showPlanningDurationInput">
+            Duration
+            <div class="showPlanningDurationContainer">
+                {{GetLength()}}
+            </div>
+            <button ng-show="selectedAudio == null"
+                    ng-click="Actions.MoveToSongChooser()"
+                    class="showPlanningUploadAudio btn btn-warning">
+                Upload audio to change
+            </button>
+            <button ng-show="selectedAudio != null"
+                    ng-click="Actions.UpdateDuration()"
+                    class="showPlanningUploadAudio btn btn-warning">
+                Update by uploaded song
+            </button>
+        </div>
+        <div class="showPlanningStartInput">
+            Start Date
+            <div class="showPlanningStartContainer">
+                {{GetStartDate()}}
+            </div>
+            <div class="showPlanningStartButtons">
+                <button class="btn btn-warning" ng-click="Actions.SelectStart()">
+                    Select new
+                </button>
+                or
+                <button class="btn btn-warning" ng-click="Actions.Draft()">
+                    Draft
+                </button>
+            </div>
+        </div>
+        <div ng-show="selectingStart" class="showPlanningTimeSelector">
+            <input type="date" ng-model="dateToSelect">
+            <input type="time" ng-model="timeToSelect">
+            <div class="showPlanningTimeSelectorUse glyphicon glyphicon-ok" ng-click="Actions.UseStart()"></div>
+            <div class="showPlanningTimeSelectorClose glyphicon glyphicon-remove" ng-click="Actions.DeselectStart()"></div>
+        </div>
+        <button ng-class="{
+                showPlanningSaveButton: true,
+                btn: true,
+                'btn-warning': (lastSave == 'none' || saving),
+                'btn-success': (lastSave == 'success' && !saving),
+                'btn-danger': (lastSave == 'fail' && !saving)
+            }"
+                ng-click="Actions.Save()"
+                ng-disabled="saving">
+            Save
+        </button>
+    </div>
+</div>

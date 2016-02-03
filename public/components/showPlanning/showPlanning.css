@@ -1,0 +1,149 @@
+.showPlanningForm {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    width: 600px;
+    height: 500px;
+    border: 1px solid #EEEEEE;
+    border-radius: 4px;
+}
+
+.showPlanningNameInput {
+    position: relative;
+    margin-top: 50px;
+    margin-left: 50px;
+    width: 500px;
+    height: 50px;
+    border: 1px solid orange;
+    border-radius: 4px;
+    color: #BBBBBB;
+    padding-top: 10px;
+    padding-left: 20px;
+    font-size: 18px;
+}
+
+.showPlanningNameContainer {
+    position: absolute;
+    left: 120px;
+    width: 350px;
+    height: 30px;
+    top: 7px;
+    color: orange;
+    border: none;
+}
+
+.showPlanningDurationInput {
+    position: relative;
+    margin-top: 20px;
+    margin-left: 50px;
+    width: 500px;
+    height: 50px;
+    border: 1px solid orange;
+    border-radius: 4px;
+    color: #BBBBBB;
+    padding-top: 10px;
+    padding-left: 20px;
+    font-size: 18px;
+}
+
+.showPlanningDurationContainer {
+    position: absolute;
+    left: 120px;
+    top: 10px;
+    width: 140px;
+    height: 40px;
+}
+
+.showPlanningUploadAudio {
+    position: absolute;
+    right: 20px;
+    top: 7px;
+}
+
+.showPlanningStartInput {
+    position: relative;
+    margin-top: 20px;
+    margin-left: 50px;
+    width: 500px;
+    height: 50px;
+    border: 1px solid orange;
+    border-radius: 4px;
+    color: #BBBBBB;
+    padding-top: 10px;
+    padding-left: 20px;
+    font-size: 18px;
+}
+
+.showPlanningStartContainer {
+    position: absolute;
+    left: 120px;
+    top: 10px;
+    width: 160px;
+    height: 40px;
+}
+
+.showPlanningStartButtons {
+    position: absolute;
+    left: 300px;
+    top: 7px;
+    width: 180px;
+    height: 40px;
+}
+
+.showPlanningTimeSelector {
+    position: relative;
+    margin-top: 20px;
+    margin-left: 75px;
+    width: 450px;
+    height: 50px;
+    border: 1px solid orange;
+    border-radius: 4px;
+    color: #BBBBBB;
+    padding-top: 10px;
+    padding-left: 20px;
+    font-size: 18px;
+}
+
+.showPlanningTimeSelectorClose {
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    width: 15px;
+    height: 15px;
+    font-size: 15px;
+    color: #BBBBBB;
+}
+
+.showPlanningTimeSelectorClose:hover {
+    cursor: pointer;
+}
+
+.showPlanningTimeSelectorClose:active {
+    color: #EEEEEE;
+}
+
+.showPlanningTimeSelectorUse {
+    position: absolute;
+    right: 40px;
+    top: 15px;
+    width: 15px;
+    height: 15px;
+    font-size: 15px;
+    color: #BBBBBB;
+}
+
+.showPlanningTimeSelectorUse:hover {
+    cursor: pointer;
+}
+
+.showPlanningTimeSelectorUse:active {
+    color: #EEEEEE;
+}
+
+.showPlanningSaveButton {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    margin-left: -90px;
+    width: 180px;
+}

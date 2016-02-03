@@ -1,0 +1,16 @@
+<div ng-controller="clientEventListCtrl" class="clientEventListFullScreen">
+    <div class="clientEventListHeader">
+        Featured events
+    </div>
+    <div ng-repeat="event in FormattedEventList"
+         class="clientEventListEventContainer"
+         ng-click="Actions.SelectShow(event.id)">
+        <div class="clientEventListEventContainerInnerText">
+            {{event.name}}
+        </div>
+        <div class="clientEventListEventContainerNextChevron">
+            <div class="clientEventListEventContainerNextChevronInner">
+            </div>
+        </div>
+    </div>
+</div>
