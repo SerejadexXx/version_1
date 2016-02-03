@@ -7,7 +7,7 @@ var express = require('express');
 var superSecret = 'PutinLALALA';
 app.set('superSecret', superSecret);
 var mongoose = require('mongoose');
-var db = mongoose.createConnection('mongodb://localhost/flareTest');
+var db = mongoose.createConnection('mongodb://localhost:27017/flareTest');
 var Models = require('./workers/modelsWorker.js')(db);
 
 var favicon = require('serve-favicon');

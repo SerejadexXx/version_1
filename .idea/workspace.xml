@@ -2,66 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="de0a87a4-1046-4118-acf5-fdb96d6dabbb" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.bowerrc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/eventSchema.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/userSchema.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/admin.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/apps/adminApp.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/apps/clientApp.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/client.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/components/admin/admin.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/components/admin/adminCtrl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/components/client/client.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/components/client/clientCtrl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/components/client/clientEventList/clientEventList.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/components/client/clientEventList/clientEventList.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/components/client/clientEventList/clientEventListCtrl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/components/client/clientShow/clientShow.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/components/client/clientShow/clientShow.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/components/client/clientShow/clientShowCtrl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/components/countdown/countdown.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/components/countdown/countdown.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/components/countdown/countdownCtrl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/components/footer/footer.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/components/footer/footer.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/components/footer/footerCtrl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/components/index/index.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/components/index/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/components/index/indexCtrl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/components/login/login.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/components/login/login.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/components/login/loginCtrl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/components/player/player.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/components/player/player.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/components/player/playerCtrl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/components/previewBox/previewBox.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/components/previewBox/previewBox.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/components/previewBox/previewBoxCtrl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/components/showCreation/momentsCreation/momentEditor/momentEditor.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/components/showCreation/momentsCreation/momentEditor/momentEditor.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/components/showCreation/momentsCreation/momentEditor/momentEditorCtrl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/components/showCreation/momentsCreation/momentsCreation.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/components/showCreation/momentsCreation/momentsCreation.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/components/showCreation/momentsCreation/momentsCreationCtrl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/components/showCreation/showCreation.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/components/showCreation/showCreation.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/components/showCreation/showCreationCtrl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/components/showPlanning/showPlanning.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/components/showPlanning/showPlanning.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/components/showPlanning/showPlanningCtrl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/components/songChooser/songChooser.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/components/songChooser/songChooser.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/components/songChooser/songChooserCtrl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/services/AuthorizationService.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/services/NavigationService.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/services/TemporaryStorageService.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/services/momentsParserService.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/services/timeSyncService.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/workers/adminWorker.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/workers/clientsWorker.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/workers/eventWorker.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/workers/modelsWorker.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
     </list>
     <ignored path="version_1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -82,6 +23,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="clientsWorker.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/workers/clientsWorker.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="18" column="34" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="clientCtrl.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/components/client/clientCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -95,8 +46,8 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.47586206">
-              <caret line="23" column="83" selection-start-line="23" selection-start-column="83" selection-end-line="23" selection-end-column="83" />
+            <state vertical-scroll-proportion="0.22758621">
+              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -172,16 +123,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="admin.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/admin.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.0">
-              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="Git.Settings">
@@ -236,11 +177,11 @@
         <option value="$PROJECT_DIR$/public/admin.html" />
         <option value="$PROJECT_DIR$/workers/eventWorker.js" />
         <option value="$PROJECT_DIR$/workers/adminWorker.js" />
-        <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/public/components/index/indexCtrl.js" />
         <option value="$PROJECT_DIR$/public/components/admin/adminCtrl.js" />
         <option value="$PROJECT_DIR$/public/services/AuthorizationService.js" />
         <option value="$PROJECT_DIR$/public/apps/adminApp.js" />
+        <option value="$PROJECT_DIR$/app.js" />
       </list>
     </option>
   </component>
@@ -884,14 +825,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/workers/clientsWorker.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.1172414">
-          <caret line="54" column="26" selection-start-line="54" selection-start-column="26" selection-end-line="54" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/workers/eventWorker.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -904,14 +837,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="137" column="23" selection-start-line="137" selection-start-column="23" selection-end-line="137" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/components/client/clientCtrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
           <folding />
         </state>
       </provider>
@@ -964,10 +889,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/components/client/clientCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workers/clientsWorker.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="34" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.47586206">
-          <caret line="23" column="83" selection-start-line="23" selection-start-column="83" selection-end-line="23" selection-end-column="83" />
+        <state vertical-scroll-proportion="0.22758621">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding />
         </state>
       </provider>
