@@ -33,7 +33,6 @@ module.controller('momentEditorCtrl', function($scope, $rootScope, $interval, Mo
         PlayerFunctional.SetProgress($scope.momentToEdit.startAt);
         $scope.displayPreview = true;
         watcher = $interval(function() {
-            console.log('I am still here');
             var progress = PlayerFunctional.GetProgress();
             $scope.previewInfo.currentProgress = progress;
             if (progress >= $scope.endsAt - 0.0001) {
