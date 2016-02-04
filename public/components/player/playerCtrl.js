@@ -126,8 +126,8 @@ module.controller('playerCtrl', function($scope, $rootScope, $interval, Temporar
     $scope.Actions = {
         Play: function() {
             PlayerFunctional.Play();
+            $interval.cancel(watcher);
             watcher = $interval(function() {
-                console.log('I am still here');
                 if (PlayerFunctional.GetProgress() >= Math.floor(PlayerFunctional.GetLength() * 100) - 0.0001) {
                     $scope.Actions.Stop();
                 }
