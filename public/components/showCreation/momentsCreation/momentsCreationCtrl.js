@@ -66,7 +66,7 @@ module.factory('MomentsCreationFunctional', function($rootScope, $http, $timeout
     this.Init = function() {
         dataLoaded = false;
         _moments = [];
-        _moments.push(this.CreateDefaultMoment(0));
+        _moments.push(CreateDefaultMoment(0));
         var SuccessfulDownload = function(response) {
             _moments = response.data.moments;
             if (!_moments) {
@@ -150,7 +150,7 @@ module.factory('MomentsCreationFunctional', function($rootScope, $http, $timeout
         for (var i = 0; i < _moments.length; i++) {
             if (_moments[i].startAt > progress) {
                 dummyMoments = JSON.parse(JSON.stringify(_moments));
-                dummyMoments.splice(i, 0, this.CreateDefaultMoment(progress));
+                dummyMoments.splice(i, 0, CreateDefaultMoment(progress));
                 if (_AreMomentsCorrect(dummyMoments)) {
                     _moments = JSON.parse(JSON.stringify(dummyMoments));
                     $rootScope.$broadcast('someMomentChanged', {});
@@ -163,7 +163,7 @@ module.factory('MomentsCreationFunctional', function($rootScope, $http, $timeout
             }
         }
         dummyMoments = JSON.parse(JSON.stringify(_moments));
-        dummyMoments.push(this.CreateDefaultMoment(progress));
+        dummyMoments.push(CreateDefaultMoment(progress));
         if (_AreMomentsCorrect(dummyMoments)) {
             _moments = JSON.parse(JSON.stringify(dummyMoments));
             $rootScope.$broadcast('someMomentChanged', {});
