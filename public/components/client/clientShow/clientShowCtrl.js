@@ -36,6 +36,9 @@ module.controller('clientShowCtrl', function($scope, $interval, $rootScope, Mome
             if (time < startAt) {
                 $scope.countdownDays = null;
                 $scope.countdownSeconds = startAt - time;
+            } else {
+                $scope.countdownSeconds = null;
+                $scope.countdownDays = null;
             }
             $scope.currentColor = MomentsParserFunctional.GetColor(
                 momentsToken,
@@ -43,6 +46,21 @@ module.controller('clientShowCtrl', function($scope, $interval, $rootScope, Mome
                 duration,
                 Math.floor((time - startAt) / 10));
         }, 10);
+    });
+    $scope.$on('newEventList', function(event, args) {
+        if ($scope.showData) {
+            var events = $scope.$parent.eventList.filter(function (event) {
+                return event.id == $scope.id;
+            });
+            if (events.length > 0) {
+                $scope.name = events[0].name;
+                startAt = (new Date(events[0].startAt)).getTime();
+                duration = events[0].duration;
+            }
+            if (events.length > 0 && events[0].moments) {
+                moments = events[0].moments;
+            }
+        }
     });
 
     $scope.$on('deselectedShow', function(event, args) {
