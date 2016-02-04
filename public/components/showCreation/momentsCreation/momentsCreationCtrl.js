@@ -263,7 +263,7 @@ module.controller('momentsCreationCtrl', function($scope, $rootScope, $interval,
     $scope.activeId = null;
     var intervalPromise = $interval(function() {
         var progressByPlayer = PlayerFunctional.GetProgress();
-        $scope.activeId = MomentsCreationFunctional.GetMomentByProgress(progressByPlayer);
+        $scope.activeId = MomentsCreationFunctional.GetMomentByProgress(progressByPlayer + 1);
     }, 10);
 
     $scope.$on('createNewMoment', function() {
