@@ -14,6 +14,8 @@ module.controller('clientEventListCtrl', function($scope, $rootScope, TimeSyncFu
                   .filter(function(event) {
                       var start = (new Date(event.startAt)).getTime();
                       var duration = Number(event.duration) * 10;
+                      console.log(event);
+                      console.log(duration);
                       return (TimeSyncFunctional.GetTime() - (start + duration) < 1000 * 60 * 60 * 24);
                   })
                   .sort(function(a, b) {
