@@ -1,11 +1,14 @@
 var module = angular.module('adminApp');
 
 module.controller('previewBoxCtrl', function($scope, $interval, MomentsParserFunctional) {
+    $scope.$on('$destroy', function() {
+        $interval.cancel(intervalPromise);
+    });
     // 'horizontal' or 'vertical'
     $scope.info = $scope.$parent.previewInfo;
     $scope.userColor = '#ffffff';
     var parserToken = MomentsParserFunctional.GetToken();
-    $interval(function() {
+    var intervalPromise = $interval(function() {
         $scope.info = $scope.$parent.previewInfo;
         if ($scope.info.moments) {
             $scope.userColor = MomentsParserFunctional.GetColor(

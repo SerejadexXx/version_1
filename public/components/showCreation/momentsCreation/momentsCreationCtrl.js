@@ -212,6 +212,13 @@ module.factory('MomentsCreationFunctional', function($rootScope, $http, $timeout
     };
 
     var SetMoment = function(newMoment) {
+        if (newMoment == null) {
+            console.log('ERROR: updating by null');
+        }
+        if (newMoment.id == null) {
+            console.log('ERROR: illegal id');
+            console.log(newMoment);
+        }
         _moments = _moments.map(function(val) {
             if (val.id != newMoment.id) {
                 return val;
@@ -282,7 +289,7 @@ module.controller('momentsCreationCtrl', function($scope, $rootScope, $interval,
             $rootScope.$broadcast('momentToEdit', {momentToEdit: moment.id});
         },
         MoveToMoment: function(moment) {
-            PlayerFunctional.SetProgress(moment.startAt);
+            PlayerFunctional.SetProgress(moment.startAt + 1);
         }
     };
 
