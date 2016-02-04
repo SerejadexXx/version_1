@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="de0a87a4-1046-4118-acf5-fdb96d6dabbb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/components/client/clientShow/clientShowCtrl.js" afterPath="$PROJECT_DIR$/public/components/client/clientShow/clientShowCtrl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/components/client/clientEventList/clientEventListCtrl.js" afterPath="$PROJECT_DIR$/public/components/client/clientEventList/clientEventListCtrl.js" />
     </list>
     <ignored path="version_1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,11 +33,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="clientShowCtrl.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="clientShowCtrl.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/components/client/clientShow/clientShowCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.73103446">
+            <state vertical-scroll-proportion="0.0">
               <caret line="97" column="30" selection-start-line="97" selection-start-column="30" selection-end-line="97" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="adminWorker.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/workers/adminWorker.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="133" column="39" selection-start-line="133" selection-start-column="39" selection-end-line="133" selection-end-column="39" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="eventWorker.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/workers/eventWorker.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="127" column="20" selection-start-line="127" selection-start-column="20" selection-end-line="127" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -83,6 +103,16 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="clientEventListCtrl.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/components/client/clientEventList/clientEventListCtrl.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.33103448">
+              <caret line="16" column="78" selection-start-line="16" selection-start-column="78" selection-end-line="16" selection-end-column="78" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="Git.Settings">
@@ -119,7 +149,6 @@
         <option value="$PROJECT_DIR$/public/client.html" />
         <option value="$PROJECT_DIR$/public/apps/clientApp.js" />
         <option value="$PROJECT_DIR$/public/services/MomentsParserService.js" />
-        <option value="$PROJECT_DIR$/public/components/client/clientEventList/clientEventListCtrl.js" />
         <option value="$PROJECT_DIR$/public/components/client/clientEventList/clientEventList.html" />
         <option value="$PROJECT_DIR$/public/components/client/clientShow/clientShow.html" />
         <option value="$PROJECT_DIR$/public/components/player/playerCtrl.js" />
@@ -142,6 +171,7 @@
         <option value="$PROJECT_DIR$/public/components/client/clientEventList/clientEventList.css" />
         <option value="$PROJECT_DIR$/public/components/client/clientShow/clientShow.css" />
         <option value="$PROJECT_DIR$/public/components/client/clientShow/clientShowCtrl.js" />
+        <option value="$PROJECT_DIR$/public/components/client/clientEventList/clientEventListCtrl.js" />
       </list>
     </option>
   </component>
@@ -719,14 +749,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/components/client/clientEventList/clientEventListCtrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="68" selection-start-line="15" selection-start-column="68" selection-end-line="15" selection-end-column="68" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/components/client/clientEventList/clientEventList.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.875">
@@ -875,26 +897,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/workers/adminWorker.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7503448">
-          <caret line="133" column="39" selection-start-line="133" selection-start-column="39" selection-end-line="133" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/components/admin/adminCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.12413793">
           <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/workers/eventWorker.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4627507">
-          <caret line="131" column="20" selection-start-line="131" selection-start-column="19" selection-end-line="131" selection-end-column="20" />
           <folding />
         </state>
       </provider>
@@ -931,6 +937,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/components/client/clientShow/clientShowCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="97" column="30" selection-start-line="97" selection-start-column="30" selection-end-line="97" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workers/adminWorker.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="133" column="39" selection-start-line="133" selection-start-column="39" selection-end-line="133" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workers/eventWorker.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="127" column="20" selection-start-line="127" selection-start-column="20" selection-end-line="127" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/components/client/clientCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -939,10 +969,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/components/client/clientShow/clientShowCtrl.js">
+    <entry file="file://$PROJECT_DIR$/public/components/client/clientEventList/clientEventListCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.73103446">
-          <caret line="97" column="30" selection-start-line="97" selection-start-column="30" selection-end-line="97" selection-end-column="30" />
+        <state vertical-scroll-proportion="0.33103448">
+          <caret line="16" column="78" selection-start-line="16" selection-start-column="78" selection-end-line="16" selection-end-column="78" />
           <folding />
         </state>
       </provider>
