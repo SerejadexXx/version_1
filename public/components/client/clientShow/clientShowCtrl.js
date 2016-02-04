@@ -95,7 +95,7 @@ module.controller('clientShowCtrl', function($scope, $interval, $rootScope, Mome
             }
             rez += mm + ":";
             val %= (1000 * 60);
-            var ss = Math.floor(val / (1000));
+            var ss = Math.ceil(val / (1000));
             if (ss < 10) {
                 rez += "0";
             }
