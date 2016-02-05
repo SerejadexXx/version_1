@@ -44,7 +44,7 @@ module.service('TimeSyncFunctional', function($http, $timeout) {
         var Max = _intervals[0].right;
         for (var i = 1; i < _intervals.length; i++) {
             Min = Math.max(Min, _intervals[i].left);
-            Max = Math.min(Max, _intervals[i].left);
+            Max = Math.min(Max, _intervals[i].right);
         }
 
         // TODO should be something smarter
@@ -56,7 +56,7 @@ module.service('TimeSyncFunctional', function($http, $timeout) {
         var Max = _intervals[0].right;
         for (var i = 1; i < _intervals.length; i++) {
             Min = Math.max(Min, _intervals[i].left);
-            Max = Math.min(Max, _intervals[i].left);
+            Max = Math.min(Max, _intervals[i].right);
         }
         if (Min > Max) {
             return false;
@@ -74,7 +74,7 @@ module.service('TimeSyncFunctional', function($http, $timeout) {
         var Max = _intervals[0].right;
         for (var i = 1; i < _intervals.length; i++) {
             Min = Math.max(Min, _intervals[i].left);
-            Max = Math.min(Max, _intervals[i].left);
+            Max = Math.min(Max, _intervals[i].right);
         }
         console.log(Min + " " + Max);
         console.log(interval);
