@@ -69,13 +69,6 @@ module.service('TimeSyncFunctional', function($http, $timeout) {
         while (_intervals.length > 10 && !_CheckIntervals()) {
             _intervals.splice(0, 1);
         }
-
-        var Min = _intervals[0].left;
-        var Max = _intervals[0].right;
-        for (var i = 1; i < _intervals.length; i++) {
-            Min = Math.max(Min, _intervals[i].left);
-            Max = Math.min(Max, _intervals[i].right);
-        }
     };
 
     this.GetTime = function() {
