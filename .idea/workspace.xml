@@ -119,8 +119,8 @@
       <file leaf-file-name="TimeSyncService.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/services/TimeSyncService.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.37931034">
-              <caret line="76" column="51" selection-start-line="76" selection-start-column="51" selection-end-line="76" selection-end-column="51" />
+            <state vertical-scroll-proportion="0.6896552">
+              <caret line="77" column="9" selection-start-line="77" selection-start-column="9" selection-end-line="77" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -1115,8 +1115,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/services/TimeSyncService.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37931034">
-          <caret line="76" column="51" selection-start-line="76" selection-start-column="51" selection-end-line="76" selection-end-column="51" />
+        <state vertical-scroll-proportion="0.6896552">
+          <caret line="77" column="9" selection-start-line="77" selection-start-column="9" selection-end-line="77" selection-end-column="9" />
           <folding />
         </state>
       </provider>
