@@ -76,9 +76,6 @@ module.service('TimeSyncFunctional', function($http, $timeout) {
             Min = Math.max(Min, _intervals[i].left);
             Max = Math.min(Max, _intervals[i].left);
         }
-        if (Min > Max) {
-            return false;
-        }
         console.log(Min + " " + Max);
         console.log(interval);
     };
