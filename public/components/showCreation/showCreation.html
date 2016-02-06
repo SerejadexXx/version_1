@@ -9,7 +9,7 @@
             <div data-ng-repeat="momentID in range(0, secondsToShow)"
                  class="showCreationTimeMoment"
                  ng-style="{top: (momentID*pixelsPerSec)+'px'}">
-                <div class="showCreationTimeMomentTimeContainer">{{Filters.s_mmss(momentID)}}</div>
+                <div id="anchor_{{momentID}}" class="showCreationTimeMomentTimeContainer">{{Filters.s_mmss(momentID)}}</div>
             </div>
         </div>
         <ng-include src="'/components/showCreation/momentsCreation/momentsCreation.html'"></ng-include>

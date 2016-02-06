@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="de0a87a4-1046-4118-acf5-fdb96d6dabbb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/components/showCreation/showCreation.html" afterPath="$PROJECT_DIR$/public/components/showCreation/showCreation.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/components/showCreation/showCreationCtrl.js" afterPath="$PROJECT_DIR$/public/components/showCreation/showCreationCtrl.js" />
     </list>
     <ignored path="version_1.iws" />
@@ -57,8 +57,8 @@
       <file leaf-file-name="showCreationCtrl.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/components/showCreation/showCreationCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.45517242">
-              <caret line="36" column="24" selection-start-line="36" selection-start-column="24" selection-end-line="36" selection-end-column="24" />
+            <state vertical-scroll-proportion="0.7241379">
+              <caret line="35" column="8" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -67,8 +67,8 @@
       <file leaf-file-name="showCreation.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/components/showCreation/showCreation.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-16.875">
-              <caret line="27" column="57" selection-start-line="27" selection-start-column="56" selection-end-line="27" selection-end-column="57" />
+            <state vertical-scroll-proportion="-6.875">
+              <caret line="11" column="42" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -132,7 +132,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/public/components/login/loginCtrl.js" />
         <option value="$PROJECT_DIR$/public/components/login/login.html" />
         <option value="$PROJECT_DIR$/public/components/login/login.css" />
         <option value="$PROJECT_DIR$/public/components/songChooser/songChooserCtrl.js" />
@@ -182,6 +181,7 @@
         <option value="$PROJECT_DIR$/public/components/player/playerCtrl.js" />
         <option value="$PROJECT_DIR$/public/services/TimeSyncService.js" />
         <option value="$PROJECT_DIR$/public/components/showCreation/momentsCreation/momentEditor/momentEditorCtrl.js" />
+        <option value="$PROJECT_DIR$/public/components/showCreation/showCreation.html" />
         <option value="$PROJECT_DIR$/public/components/showCreation/showCreationCtrl.js" />
       </list>
     </option>
@@ -1087,14 +1087,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/components/showCreation/momentsCreation/momentsCreationCtrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="213" column="12" selection-start-line="213" selection-start-column="12" selection-end-line="213" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/components/showCreation/momentsCreation/momentEditor/momentEditorCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1103,18 +1095,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/components/showCreation/momentsCreation/momentsCreationCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="213" column="12" selection-start-line="213" selection-start-column="12" selection-end-line="213" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/components/showCreation/showCreation.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.875">
-          <caret line="27" column="57" selection-start-line="27" selection-start-column="56" selection-end-line="27" selection-end-column="57" />
+        <state vertical-scroll-proportion="-6.875">
+          <caret line="11" column="42" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/components/showCreation/showCreationCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.45517242">
-          <caret line="36" column="24" selection-start-line="36" selection-start-column="24" selection-end-line="36" selection-end-column="24" />
+        <state vertical-scroll-proportion="0.7241379">
+          <caret line="35" column="8" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="8" />
           <folding />
         </state>
       </provider>

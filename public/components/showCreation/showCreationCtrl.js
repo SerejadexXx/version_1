@@ -9,7 +9,7 @@ module.config(function($stateProvider) {
     });
 });
 
-module.controller('showCreationCtrl', function($anchorScroll, $scope, $rootScope, $cookies, NavigationFunctional, PlayerFunctional, $interval, $window, MomentsCreationFunctional) {
+module.controller('showCreationCtrl', function($location, $scope, $rootScope, $cookies, NavigationFunctional, PlayerFunctional, $interval, $window, MomentsCreationFunctional) {
     $scope.$on('$destroy', function() {
         $interval.cancel(intervalPromise);
     });
@@ -33,8 +33,7 @@ module.controller('showCreationCtrl', function($anchorScroll, $scope, $rootScope
     });
     $scope.$on('momentToEditDone', function(event, args) {
         $scope.viewMode = 'momentsCreation';
-        $anchorScroll.yOffset = $scope.ProgressInPixels;
-        $anchorScroll();
+        $location.hash('anchor_'+Math.floor($scope.Filters.ProgressInPixelsToProgress($scope.ProgressInPixels) / 100));
     });
 
     $scope.ProgressInPixels = 0;
