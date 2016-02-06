@@ -65,6 +65,7 @@ module.service('TimeSyncFunctional', function($http, $timeout) {
     };
 
     var _AddInterval = function(interval) {
+        console.log(interval.left + " " + interval.right);
         _intervals.push(interval);
         while (_intervals.length > 10 && !_CheckIntervals()) {
             _intervals.splice(0, 1);
