@@ -33,7 +33,17 @@ module.controller('showCreationCtrl', function($location, $scope, $rootScope, $c
     });
     $scope.$on('momentToEditDone', function(event, args) {
         $scope.viewMode = 'momentsCreation';
-        $location.hash('anchor_'+Math.floor($scope.Filters.ProgressInPixelsToProgress($scope.ProgressInPixels) / 100));
+        if ($scope.ProgressInPixels < 5 * $scope.pixelsPerSec) {
+            $location.hash('anchor_footer');
+        } else {
+            $location.hash('anchor_'
+                + Math.floor(
+                    $scope.Filters.ProgressInPixelsToProgress(
+                        $scope.ProgressInPixels - 5 * $scope.pixelsPerSec
+                    ) / 100
+                )
+            );
+        }
     });
 
     $scope.ProgressInPixels = 0;
