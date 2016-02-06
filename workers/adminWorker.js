@@ -112,7 +112,7 @@ module.exports = {
                             console.log(err);
                         }
                         var token = jwt.sign(newUser, app.get('superSecret'), {
-                            expiresIn: "1d"
+                            expiresIn: "300d"
                         });
                         res.json({
                             token: token
