@@ -5,6 +5,8 @@ var API_PREFIX = '/api/clients/';
 
 module.exports = {
     createClientsWorker: function(app, Models, __dirname) {
+        var pushupWorker = require('./pushupWorker').createPushupWorker(app, Models, __dirname);
+
         var GetHash = function(val) {
             return crypto.createHash('md5').update(val).digest('hex');
         };
@@ -27,6 +29,12 @@ module.exports = {
                 }
                 _events = events;
                 _eventsHash = GetHash(JSON.stringify(_events));
+                _events.forEach(function(event) {
+                    var timeToStart = Date.now() - (new Date(Number(event.startAt))).getTime();
+                    if ((timeToStart > 5 * 60 * 1000) && (timeToStart < 10 * 60 * 1000)) {
+                        pushupWorker.Send(event.id);
+                    }
+                });
             });
         };
         setInterval(fetchFromDB, 5000);

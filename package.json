@@ -4,6 +4,7 @@
   "description": "first full version of flareme app and admin.",
   "main": "app.js",
   "dependencies": {
+    "apn": "^1.7.5",
     "crypto": "^0.0.3",
     "express": "^4.13.3",
     "jsonwebtoken": "^5.5.4",
