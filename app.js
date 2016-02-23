@@ -35,7 +35,7 @@ app.use(function(req, res, next) {
     }
 });
 
-
+var testWorker = require('./workers/testWorker').createTestWorker(app, __dirname);
 var eventsWorker = require('./workers/eventWorker').createEventWorker(app, Models);
 var adminWorker = require('./workers/adminWorker').createAdminWorker(app, Models, __dirname);
 var clientsWorker = require('./workers/clientsWorker').createClientsWorker(app, Models, __dirname);
