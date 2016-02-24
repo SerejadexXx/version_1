@@ -15,29 +15,17 @@ module.exports = {
         var _eventsHash = GetHash(JSON.stringify(_events));
 
         var Events = Models.Event;
-        var fetchFromDB = function() {
-            Events.find({
-                $and: [{
-                    startAt: {$ne: 'Draft'}
-                }, {
-                    startAt: {$ne: null}
-                }]
-            },
-            function(err, events) {
-                if (err) {
-                    console.log(err);
-                }
-                _events = events;
-                _eventsHash = GetHash(JSON.stringify(_events));
-                _events.forEach(function(event) {
-                    var timeToStart = Date.now() - (new Date(Number(event.startAt))).getTime();
-                    if ((timeToStart > 5 * 60 * 1000) && (timeToStart < 10 * 60 * 1000)) {
-                        pushupWorker.Send(event.id);
-                    }
-                });
-            });
-        };
-        setInterval(fetchFromDB, 5000);
+
+        app.post('/sendPushUps', function(req, res) {
+            var data = req.body;
+            if (!data.eventId) {
+                res.sendStatus(403);
+                return;
+            }
+
+            pushupWorker.Send(data.eventId);
+            res.sendStatus(200);
+        });
 
         app.get('/', function(req, res) {
             res.sendFile(__dirname + '/public/client.html');

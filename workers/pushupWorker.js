@@ -1,8 +1,11 @@
 var apn = require('apn');
+var gcm = require('node-gcm');
 var fs = require('fs');
 
 var certPem = fs.readFileSync('./certs/cert.pem', encoding='ascii');
 var keyPem = fs.readFileSync('./certs/key.pem', encoding='ascii');
+
+var androidSender = new gcm.Sender('AIzaSyDmmY4crcE3W0_ojkCC4qGQUm80hR6cBDE');
 
 var API_PREFIX = '/api/pushup/';
 
@@ -36,12 +39,13 @@ module.exports = {
 
         app.post(API_PREFIX + 'newToken', function(req, res) {
             var data = req.body;
-            if (!data.token || !data.eventId) {
+            if (!data.deviceType || !data.token || !data.eventId) {
                 res.sendStatus(403);
                 return;
             }
 
             var token = new Tokens({
+                deviceType: data.deviceType,
                 value: data.token,
                 eventId: data.eventId
             });
@@ -55,11 +59,18 @@ module.exports = {
         });
 
         this.Send = function(eventId) {
-            Tokens.find({id: eventId}, function(err, tokens) {
+            // ios PushUp
+            Tokens.find({$and: {
+                deviceType: 'ios',
+                id: eventId
+            }}, function(err, tokens) {
                 if (err) {
                     console.log(err);
                 }
-                Tokens.remove({id: eventId}, function(err) {
+                Tokens.remove({$and: {
+                    deviceType: 'ios',
+                    id: eventId
+                }}, function(err) {
                     if (err) {
                         console.log(err);
                     }
@@ -70,6 +81,35 @@ module.exports = {
                     apnConnection.pushNotification(note, tokens.map(function(event) {
                         return event.value;
                     }));
+                });
+            });
+
+            // android PushUp
+            Tokens.find({$and: {
+                deviceType: 'android',
+                id: eventId
+            }}, function(err, tokens) {
+                if (err) {
+                    console.log(err);
+                }
+                Tokens.remove({$and: {
+                    deviceType: 'android',
+                    id: eventId
+                }}, function(err) {
+                    if (err) {
+                        console.log(err);
+                    }
+
+                    var message = new gcm.Message();
+                    message.addNotification('Flare', 'Event is coming, are you ready?');
+
+                    androidSender.sendNoRetry(message, {registrationTokens: tokens.map(function(event) {
+                        return event.value;
+                    })}, function(err, data) {
+                        if (err) {
+                            console.log(err);
+                        }
+                    });
                 });
             });
         };

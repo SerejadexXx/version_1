@@ -59,6 +59,14 @@
     width: 180px;
 }
 
+.countdownSendPushUpsButton {
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    margin-left: -90px;
+    width: 180px;
+}
+
 .countdownTimeSelector {
     position: absolute;
     top: 250px;

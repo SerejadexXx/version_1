@@ -9,7 +9,7 @@ module.config(function($stateProvider) {
     });
 });
 
-module.controller('countdownCtrl', function($scope, $timeout, $interval, $timeout, $rootScope, $http, $cookies, NavigationFunctional, TimeSyncFunctional) {
+module.controller('countdownCtrl', function($scope, $timeout, $interval, $rootScope, $http, $cookies, NavigationFunctional, TimeSyncFunctional) {
     $scope.info = null;
     var lockTimeout;
     $scope.$on('$destroy', function() {
@@ -112,6 +112,17 @@ module.controller('countdownCtrl', function($scope, $timeout, $interval, $timeou
                 0
             );
             $scope.changingStart ^= 1;
+        },
+        SendPushUps: function() {
+            var success = function() {
+
+            };
+            var fail = function() {
+
+            };
+            $http.post('/api/clients/sendPushUps', {
+                eventId: NavigationFunctional.Params().eventId,
+            }).then(success, fail);
         }
     };
 });
