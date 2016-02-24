@@ -16,7 +16,7 @@ module.exports = {
 
         var Events = Models.Event;
 
-        app.post('/sendPushUps', function(req, res) {
+        app.post(API_PREFIX + 'sendPushUps', function(req, res) {
             var data = req.body;
             if (!data.eventId) {
                 res.sendStatus(403);
