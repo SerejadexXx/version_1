@@ -49,6 +49,7 @@ module.exports = {
             res.sendFile(__dirname + '/public/client.html');
         });
         app.get(API_PREFIX + 'catchUpdates', function(req, res) {
+            console.log(req);
             var localData = JSON.parse(req.query.localData);
             var id = localData.id;
             var data = {};
