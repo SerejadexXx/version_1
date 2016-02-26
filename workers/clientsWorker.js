@@ -15,6 +15,24 @@ module.exports = {
         var _eventsHash = GetHash(JSON.stringify(_events));
 
         var Events = Models.Event;
+        var fetchFromDB = function() {
+            Events.find({
+                    $and: [{
+                        startAt: {$not: {$eq: 'Draft'}}
+                    }, {
+                        startAt: {$not: {$eq: null}}
+                    }]
+                },
+                function(err, events) {
+                    if (err) {
+                        console.log(err);
+                    }
+                    _events = events;
+                    _eventsHash = GetHash(JSON.stringify(_events));
+                });
+        };
+        setInterval(fetchFromDB, 5000);
+
 
         app.post(API_PREFIX + 'sendPushUps', function(req, res) {
             var data = req.body;
