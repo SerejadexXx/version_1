@@ -35,6 +35,10 @@ module.exports = {
 
 
         app.post(API_PREFIX + 'sendPushUps', function(req, res) {
+            if (req.decodedToken == 'fail') {
+                res.redirect('/admin/login');
+                return;
+            }
             var data = req.body;
             if (!data.eventId) {
                 res.sendStatus(403);
@@ -49,7 +53,6 @@ module.exports = {
             res.sendFile(__dirname + '/public/client.html');
         });
         app.get(API_PREFIX + 'catchUpdates', function(req, res) {
-            console.log(req);
             var localData = JSON.parse(req.query.localData);
             var id = localData.id;
             var data = {};
@@ -63,6 +66,7 @@ module.exports = {
             }
 
             data.currentTime = Date.now();
+            console.log(data);
 
             res.send(data);
         });
