@@ -59,7 +59,7 @@ module.exports = {
             if (!id) {
                 id = uuid.v4();
             }
-            console.log(req.query);
+            console.log(req.query.localData);
             console.log(_eventsHash);
             data.id = id;
             if (localData.eventListHash != _eventsHash) {
