@@ -36,8 +36,8 @@
       <file leaf-file-name="pushupWorker.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/workers/pushupWorker.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.537931">
-              <caret line="95" column="26" selection-start-line="95" selection-start-column="26" selection-end-line="95" selection-end-column="26" />
+            <state vertical-scroll-proportion="0.74482757">
+              <caret line="63" column="29" selection-start-line="63" selection-start-column="29" selection-end-line="63" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -857,8 +857,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/workers/pushupWorker.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.537931">
-          <caret line="95" column="26" selection-start-line="95" selection-start-column="26" selection-end-line="95" selection-end-column="26" />
+        <state vertical-scroll-proportion="0.74482757">
+          <caret line="63" column="29" selection-start-line="63" selection-start-column="29" selection-end-line="63" selection-end-column="29" />
           <folding />
         </state>
       </provider>

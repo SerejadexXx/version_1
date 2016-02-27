@@ -61,15 +61,15 @@ module.exports = {
         this.Send = function(eventId) {
             // ios PushUp
             Tokens.find({$and: [
-                {deviceType: 'ios'},
-                {id: eventId}
+                {"deviceType": 'ios'},
+                {"eventId": eventId}
             ]}, function(err, tokens) {
                 if (err) {
                     console.log(err);
                 }
                 Tokens.remove({$and: [
-                    {deviceType: 'ios'},
-                    {id: eventId}
+                    {"deviceType": 'ios'},
+                    {"eventId": eventId}
                 ]}, function(err) {
                     if (err) {
                         console.log(err);
@@ -88,8 +88,8 @@ module.exports = {
 
             // android PushUp
             Tokens.find({$and: [
-                {deviceType: 'android'},
-                {id: eventId}
+                {"deviceType": 'android'},
+                {"eventId": eventId}
             ]}, function(err, tokens) {
                 console.log(tokens);
                 console.log(eventId);
@@ -97,8 +97,8 @@ module.exports = {
                     console.log(err);
                 }
                 Tokens.remove({$and: [
-                    {deviceType: 'android'},
-                    {id: eventId}
+                    {"deviceType": 'android'},
+                    {"eventId": eventId}
                 ]}, function(err) {
                     if (err) {
                         console.log(err);
