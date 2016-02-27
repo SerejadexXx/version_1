@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="de0a87a4-1046-4118-acf5-fdb96d6dabbb" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/tokenSchema.js" afterPath="$PROJECT_DIR$/models/tokenSchema.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workers/pushupWorker.js" afterPath="$PROJECT_DIR$/workers/pushupWorker.js" />
     </list>
     <ignored path="version_1.iws" />
@@ -33,11 +34,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pushupWorker.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="pushupWorker.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/workers/pushupWorker.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.74482757">
-              <caret line="63" column="29" selection-start-line="63" selection-start-column="29" selection-end-line="63" selection-end-column="29" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="107" column="44" selection-start-line="107" selection-start-column="44" selection-end-line="107" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -73,11 +74,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tokenSchema.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="tokenSchema.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/models/tokenSchema.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
+            <state vertical-scroll-proportion="0.08275862">
+              <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -166,12 +167,12 @@
         <option value="$PROJECT_DIR$/public/components/test/test.html" />
         <option value="$PROJECT_DIR$/public/components/test/testCtrl.js" />
         <option value="$PROJECT_DIR$/workers/testWorker.js" />
-        <option value="$PROJECT_DIR$/models/tokenSchema.js" />
         <option value="$PROJECT_DIR$/public/components/countdown/countdown.html" />
         <option value="$PROJECT_DIR$/public/components/countdown/countdown.css" />
         <option value="$PROJECT_DIR$/public/components/countdown/countdownCtrl.js" />
         <option value="$PROJECT_DIR$/workers/clientsWorker.js" />
         <option value="$PROJECT_DIR$/workers/pushupWorker.js" />
+        <option value="$PROJECT_DIR$/models/tokenSchema.js" />
       </list>
     </option>
   </component>
@@ -799,14 +800,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/tokenSchema.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/workers/eventWorker.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -857,8 +850,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/workers/pushupWorker.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.74482757">
-          <caret line="63" column="29" selection-start-line="63" selection-start-column="29" selection-end-line="63" selection-end-column="29" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="107" column="44" selection-start-line="107" selection-start-column="44" selection-end-line="107" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/tokenSchema.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.08275862">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
           <folding />
         </state>
       </provider>

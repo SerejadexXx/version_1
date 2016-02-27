@@ -91,8 +91,6 @@ module.exports = {
                 {"deviceType": 'android'},
                 {"eventId": eventId}
             ]}, function(err, tokens) {
-                console.log(tokens);
-                console.log(eventId);
                 if (err) {
                     console.log(err);
                 }
@@ -105,7 +103,7 @@ module.exports = {
                     }
 
                     var message = new gcm.Message();
-                    message.addNotification('Flare', 'Event is coming, are you ready?');
+                    message.addNotification('body', 'Event is coming, are you ready?');
 
                     if (tokens.length > 0) {
                         androidSender.sendNoRetry(message, {
