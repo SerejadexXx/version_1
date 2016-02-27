@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="de0a87a4-1046-4118-acf5-fdb96d6dabbb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workers/clientsWorker.js" afterPath="$PROJECT_DIR$/workers/clientsWorker.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workers/pushupWorker.js" afterPath="$PROJECT_DIR$/workers/pushupWorker.js" />
     </list>
     <ignored path="version_1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -23,21 +23,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="clientsWorker.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="clientsWorker.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/workers/clientsWorker.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.33103448">
+            <state vertical-scroll-proportion="0.0">
               <caret line="22" column="43" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pushupWorker.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="pushupWorker.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/workers/pushupWorker.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="73" column="30" selection-start-line="73" selection-start-column="30" selection-end-line="73" selection-end-column="30" />
+            <state vertical-scroll-proportion="0.71034485">
+              <caret line="97" column="41" selection-start-line="97" selection-start-column="41" selection-end-line="97" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -170,8 +170,8 @@
         <option value="$PROJECT_DIR$/public/components/countdown/countdown.html" />
         <option value="$PROJECT_DIR$/public/components/countdown/countdown.css" />
         <option value="$PROJECT_DIR$/public/components/countdown/countdownCtrl.js" />
-        <option value="$PROJECT_DIR$/workers/pushupWorker.js" />
         <option value="$PROJECT_DIR$/workers/clientsWorker.js" />
+        <option value="$PROJECT_DIR$/workers/pushupWorker.js" />
       </list>
     </option>
   </component>
@@ -847,18 +847,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/workers/pushupWorker.js">
+    <entry file="file://$PROJECT_DIR$/workers/clientsWorker.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="73" column="30" selection-start-line="73" selection-start-column="30" selection-end-line="73" selection-end-column="30" />
+          <caret line="22" column="43" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/workers/clientsWorker.js">
+    <entry file="file://$PROJECT_DIR$/workers/pushupWorker.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33103448">
-          <caret line="22" column="43" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
+        <state vertical-scroll-proportion="0.71034485">
+          <caret line="97" column="41" selection-start-line="97" selection-start-column="41" selection-end-line="97" selection-end-column="41" />
           <folding />
         </state>
       </provider>

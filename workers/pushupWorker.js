@@ -88,14 +88,14 @@ module.exports = {
 
             // android PushUp
             Tokens.find({$and: [
-                {deviceType: 'ios'},
+                {deviceType: 'android'},
                 {id: eventId}
             ]}, function(err, tokens) {
                 if (err) {
                     console.log(err);
                 }
                 Tokens.remove({$and: [
-                    {deviceType: 'ios'},
+                    {deviceType: 'android'},
                     {id: eventId}
                 ]}, function(err) {
                     if (err) {
