@@ -66,7 +66,7 @@ module.exports = {
             }
 
             data.currentTime = Date.now();
-            
+
             res.send(data);
         });
         app.get(API_PREFIX + 'catchTime', function(req, res) {

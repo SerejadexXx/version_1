@@ -44,14 +44,20 @@ module.exports = {
                 return;
             }
 
-            var token = new Tokens({
-                deviceType: data.deviceType,
-                value: data.token,
-                eventId: data.eventId
-            });
-            token.save(function(err, newUser) {
-                if (err) {
-                    res.sendStatus(403);
+            token.find({$and: [{"eventId": data.eventId}, {"value": data.value}]}, function(err, tokens) {
+                if (tokens.length == 0) {
+                    var token = new Tokens({
+                        deviceType: data.deviceType,
+                        value: data.token,
+                        eventId: data.eventId
+                    });
+                    token.save(function(err, newUser) {
+                        if (err) {
+                            res.sendStatus(403);
+                        } else {
+                            res.sendStatus(200);
+                        }
+                    });
                 } else {
                     res.sendStatus(200);
                 }
