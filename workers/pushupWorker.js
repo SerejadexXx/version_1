@@ -44,7 +44,7 @@ module.exports = {
                 return;
             }
 
-            token.find({$and: [{"eventId": data.eventId}, {"value": data.value}]}, function(err, tokens) {
+            Tokens.find({$and: [{"eventId": data.eventId}, {"value": data.value}]}, function(err, tokens) {
                 if (tokens.length == 0) {
                     var token = new Tokens({
                         deviceType: data.deviceType,

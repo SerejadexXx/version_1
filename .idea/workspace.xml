@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="de0a87a4-1046-4118-acf5-fdb96d6dabbb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workers/clientsWorker.js" afterPath="$PROJECT_DIR$/workers/clientsWorker.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workers/pushupWorker.js" afterPath="$PROJECT_DIR$/workers/pushupWorker.js" />
     </list>
     <ignored path="version_1.iws" />
@@ -37,8 +36,8 @@
       <file leaf-file-name="pushupWorker.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/workers/pushupWorker.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7862069">
-              <caret line="60" column="24" selection-start-line="60" selection-start-column="24" selection-end-line="60" selection-end-column="24" />
+            <state vertical-scroll-proportion="0.28965518">
+              <caret line="46" column="16" selection-start-line="46" selection-start-column="16" selection-end-line="46" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -858,8 +857,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/workers/pushupWorker.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7862069">
-          <caret line="60" column="24" selection-start-line="60" selection-start-column="24" selection-end-line="60" selection-end-column="24" />
+        <state vertical-scroll-proportion="0.28965518">
+          <caret line="46" column="16" selection-start-line="46" selection-start-column="16" selection-end-line="46" selection-end-column="16" />
           <folding />
         </state>
       </provider>
