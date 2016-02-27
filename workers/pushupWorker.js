@@ -91,6 +91,8 @@ module.exports = {
                 {deviceType: 'android'},
                 {id: eventId}
             ]}, function(err, tokens) {
+                console.log(tokens);
+                console.log(eventId);
                 if (err) {
                     console.log(err);
                 }
