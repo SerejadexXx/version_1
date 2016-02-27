@@ -59,6 +59,8 @@ module.exports = {
             if (!id) {
                 id = uuid.v4();
             }
+            console.log(req.query);
+            console.log(_eventsHash);
             data.id = id;
             if (localData.eventListHash != _eventsHash) {
                 data.eventListHash = _eventsHash;
@@ -66,6 +68,7 @@ module.exports = {
             }
 
             data.currentTime = Date.now();
+            console.log(data);
 
             res.send(data);
         });

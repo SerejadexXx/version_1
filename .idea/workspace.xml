@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="de0a87a4-1046-4118-acf5-fdb96d6dabbb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/tokenSchema.js" afterPath="$PROJECT_DIR$/models/tokenSchema.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workers/pushupWorker.js" afterPath="$PROJECT_DIR$/workers/pushupWorker.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workers/clientsWorker.js" afterPath="$PROJECT_DIR$/workers/clientsWorker.js" />
     </list>
     <ignored path="version_1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,11 +23,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="clientsWorker.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="clientsWorker.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/workers/clientsWorker.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="22" column="43" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
+            <state vertical-scroll-proportion="0.71034485">
+              <caret line="62" column="35" selection-start-line="62" selection-start-column="35" selection-end-line="62" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -74,10 +73,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tokenSchema.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="tokenSchema.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/models/tokenSchema.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.08275862">
+            <state vertical-scroll-proportion="0.0">
               <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
               <folding />
             </state>
@@ -170,9 +169,9 @@
         <option value="$PROJECT_DIR$/public/components/countdown/countdown.html" />
         <option value="$PROJECT_DIR$/public/components/countdown/countdown.css" />
         <option value="$PROJECT_DIR$/public/components/countdown/countdownCtrl.js" />
-        <option value="$PROJECT_DIR$/workers/clientsWorker.js" />
         <option value="$PROJECT_DIR$/workers/pushupWorker.js" />
         <option value="$PROJECT_DIR$/models/tokenSchema.js" />
+        <option value="$PROJECT_DIR$/workers/clientsWorker.js" />
       </list>
     </option>
   </component>
@@ -840,10 +839,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/workers/clientsWorker.js">
+    <entry file="file://$PROJECT_DIR$/models/tokenSchema.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="43" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
           <folding />
         </state>
       </provider>
@@ -856,10 +855,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/tokenSchema.js">
+    <entry file="file://$PROJECT_DIR$/workers/clientsWorker.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.08275862">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        <state vertical-scroll-proportion="0.71034485">
+          <caret line="62" column="35" selection-start-line="62" selection-start-column="35" selection-end-line="62" selection-end-column="35" />
           <folding />
         </state>
       </provider>
