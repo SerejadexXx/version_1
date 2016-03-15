@@ -99,4 +99,13 @@ module.controller('indexCtrl', function($scope, $cookies, $http, NavigationFunct
         }}).then(SuccessfulResponse, UnsuccessfulResponse);
     };
     FetchEventList();
+
+    $scope.newUpdateInterval = null;
+    $scope.ChangeUpdateInterval = function(value) {
+        $http.post('/api/events/saveUpdateInterval', {updateInterval: value}).then(function() {
+            console.log('success to change updateInterval');
+        }, function() {
+            console.log('fail to change updateInterval');
+        })
+    }
 });

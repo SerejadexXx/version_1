@@ -4,7 +4,7 @@ var API_PREFIX = '/api/events/';
 var eventList = [];
 
 module.exports = {
-    createEventWorker: function(app, Models) {
+    createEventWorker: function(app, Models, configConstants) {
         var Events = Models.Event;
         var Users = Models.User;
 
@@ -153,6 +153,18 @@ module.exports = {
                 }
                 res.sendStatus(202);
             });
+        });
+        app.post(API_PREFIX + 'saveUpdateInterval', function(req, res) {
+            if (req.decodedToken == 'fail') {
+                res.redirect('/admin/login');
+                return;
+            }
+            var updateInterval = req.body.updateInterval;
+            if (updateInterval == null || !(updateInterval >= 600)) {
+                updateInterval = 600;
+            }
+            configConstants.defaultUpdateInterval = updateInterval;
+            res.sendStatus(202);
         });
 
         return this;

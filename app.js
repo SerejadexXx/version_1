@@ -35,9 +35,10 @@ app.use(function(req, res, next) {
     }
 });
 
+var configConstants = require('./models/constants');
 var testWorker = require('./workers/testWorker').createTestWorker(app, __dirname);
-var eventsWorker = require('./workers/eventWorker').createEventWorker(app, Models);
+var eventsWorker = require('./workers/eventWorker').createEventWorker(app, Models, configConstants);
 var adminWorker = require('./workers/adminWorker').createAdminWorker(app, Models, __dirname);
-var clientsWorker = require('./workers/clientsWorker').createClientsWorker(app, Models, __dirname);
+var clientsWorker = require('./workers/clientsWorker').createClientsWorker(app, Models, configConstants, __dirname);
 
 server.listen(20029);
