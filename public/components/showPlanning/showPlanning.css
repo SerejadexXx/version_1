@@ -1,16 +1,21 @@
+.showPlanningFormIndent {
+    width: 1px;
+    height: 800px;
+}
+
 .showPlanningForm {
     position: absolute;
     top: 100px;
     left: 100px;
     width: 600px;
-    height: 500px;
+    height: 650px;
     border: 1px solid #EEEEEE;
     border-radius: 4px;
 }
 
 .showPlanningNameInput {
     position: relative;
-    margin-top: 50px;
+    margin-top: 20px;
     margin-left: 50px;
     width: 500px;
     height: 50px;
@@ -20,6 +25,10 @@
     padding-top: 10px;
     padding-left: 20px;
     font-size: 18px;
+}
+
+.showPlanningNameInput:first-child {
+    margin-top: 50px;
 }
 
 .showPlanningNameContainer {

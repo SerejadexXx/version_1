@@ -2,10 +2,23 @@
     <div class="footerBox">
         <ng-include src="'/components/footer/footer.html'"></ng-include>
     </div>
+    <div class="showPlanningFormIndent"></div>
     <div class="showPlanningForm" ng-show="info != null">
         <div class="showPlanningNameInput">
             Name
             <input class="showPlanningNameContainer" ng-model="info.name" placeholder="Enter name">
+        </div>
+        <div class="showPlanningNameInput">
+            Sub header
+            <input class="showPlanningNameContainer" ng-model="info.subHeader" placeholder="Enter sub header">
+        </div>
+        <div class="showPlanningNameInput">
+            Short name
+            <input class="showPlanningNameContainer" ng-model="info.shortName" placeholder="Enter short name">
+        </div>
+        <div class="showPlanningNameInput">
+            Image URL
+            <input class="showPlanningNameContainer" ng-model="info.url" placeholder="Enter image URL">
         </div>
         <div class="showPlanningDurationInput">
             Duration

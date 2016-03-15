@@ -32,6 +32,9 @@ module.exports = {
             var event = new Events({
                 id: uuid.v4(),
                 name: null,
+                subHeader: null,
+                shortName: null,
+                url: null,
                 startAt: null,
                 duration: null,
                 moments: null,
@@ -118,6 +121,9 @@ module.exports = {
                             startAt: events[0].startAt,
                             duration: events[0].duration,
                             name: events[0].name,
+                            subHeader: events[0].subHeader,
+                            shortName: events[0].shortName,
+                            url: events[0].url,
                             createdAt: events[0].createdAt
                         }
                     });
@@ -137,6 +143,9 @@ module.exports = {
                 startAt: info.startAt,
                 duration: info.duration,
                 name: info.name,
+                subHeader: info.subHeader,
+                shortName: info.shortName,
+                url: info.url,
                 createdAt: info.createdAt
             }, function(err, numberAffected, rawResponse) {
                 if (err) {

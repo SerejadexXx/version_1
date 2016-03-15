@@ -6,6 +6,9 @@ var schema = new mongoose.Schema({
         index: true
     },
     name: String,
+    subHeader: String,
+    shortName: String,
+    url: String,
     startAt: String,
     duration: String,
     moments: Object,
